@@ -1,0 +1,33 @@
+.first-section{
+  background-image: url("./../images/bachground-cohete.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1119px;
+}
+.content-first-section{
+  width: fit-content;
+  font-size: 56px;
+  margin-left: 9%;
+}
+.content-first-section *{
+  align-self: center;
+}
+
+.image-distribuidor{
+  background-image: url("./../images/logoDistribuidores.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 639px;
+}
+
+.icono-pedidos-online{
+  background-image: url("./../images/logoPedidos.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58px;
+  width: 58px;
+  margin-right: 50px;
+}

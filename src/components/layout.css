@@ -33,6 +33,7 @@ nav,
 section,
 summary {
   display: block;
+  width: 100%;
 }
 audio,
 canvas,
