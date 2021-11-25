@@ -1,9 +1,9 @@
 import * as React from "react"
-import Separator from "./separator"
+import Separator from "../separator"
 
 const FirstSection = () => (
-  <div className="first-section w-full text-white">
-    <div className='w-auto flex flex-col content-first-section'>
+  <div className="first-section w-full text-white hidden md:flex">
+    <div className='w-auto flex flex-col content-first-section fit-content'>
       <Separator dataHeigth="270px" dataWidth="1px"/>
       <span className='my-2'>
         Lanza tu negocio con los

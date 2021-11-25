@@ -7,7 +7,9 @@ module.exports = {
       black: '#000000',
       white: '#FFFFFF',
       primary: '#BDD345',
-      secondary: '#58585A'
+      secondary: '#58585A',
+      blue: '#0084C1',
+      darkBlue: '#455880',
     },
     fontSize: {
       'xs': '10px',
@@ -15,6 +17,7 @@ module.exports = {
       'md': '14px',
       'lg': '16px',
       'xl': '18px',
+      '1xl': '21px',
       '2xl': '22px',
       '7xl': '48px'
     }

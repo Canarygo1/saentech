@@ -5,8 +5,27 @@
   background-size: cover;
   min-height: 1119px;
 }
-.content-first-section{
+
+.fit-content{
   width: fit-content;
+}
+
+.card{
+  width: 15.5rem;
+  height: 231px;
+  border-radius: 18px;
+}
+
+.card-opiniones{
+  max-width: 390px;
+  min-height: 467px;
+}
+
+.card-opiniones span{
+  max-width: 286px;
+}
+
+.content-first-section{
   font-size: 56px;
   margin-left: 9%;
 }
@@ -19,15 +38,24 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 639px;
+  height: 641px;
+  width: 611px;
 }
 
-.icono-pedidos-online{
-  background-image: url("./../images/logoPedidos.png");
+.icon-background{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 58px;
   width: 58px;
   margin-right: 50px;
+}
+
+.icono-pedidos-online{
+  background-image: url("./../images/logoPedidos.png");
+}
+
+.section-products{
+  max-height: 600px;
+  overflow: hidden;
 }

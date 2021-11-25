@@ -11,21 +11,14 @@ import PropTypes from "prop-types"
 import Header from "./header"
 import "./layout.css"
 import "./style.css"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+      <main>{children}</main>
+      <Footer />
     </>
   )
 }

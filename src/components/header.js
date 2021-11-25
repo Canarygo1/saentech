@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Header = () => (
   <header>
-    <div className="header-content text-white flex items-center justify-around py-2">
+    <div className="header-content text-white flex items-center justify-between md:justify-around py-2 px-5 md:px-0">
       <Link to="/">
         <StaticImage
           src="../images/logo.png"
@@ -14,7 +14,7 @@ const Header = () => (
           alt="A logo"
         />
       </Link>
-      <div>
+      <div className="hidden md:block">
         <span className="text-lg mx-6">
         Inicio
       </span>
@@ -31,16 +31,25 @@ const Header = () => (
         Contacto
       </span>
       </div>
-      <div className='flex items-center'>
+      <div className="hidden md:flex items-center">
         <span className="text-secondary text-lg mx-2">
         +00 123 456 789
         </span>
-        <div className='bg-primary rounded-full py-1 px-4 mx-2 text-black'>
+        <div className="bg-primary rounded-full py-1 px-4 mx-2 text-black">
           Contáctanos
         </div>
-        <div className='bg-transparent border-2 border-solid border-primary rounded-full py-1 px-4 mx-2'>
+        <div className="bg-transparent border-2 border-solid border-primary rounded-full py-1 px-4 mx-2">
           Acceso Clientes
         </div>
+      </div>
+      <div className="block md:hidden">
+        <StaticImage
+          src="../images/menu.png"
+          width={63}
+          quality={100}
+          formats={["auto", "webp", "avif"]}
+          alt="A logo"
+        />
       </div>
     </div>
   </header>
