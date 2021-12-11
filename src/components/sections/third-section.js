@@ -1,9 +1,9 @@
 import * as React from "react"
 
 const ThirdSection = () => (
-  <div className="w-full hidden md:flex md:flex-col md:text-center text-white text-7xl bg-blue bg-opacity-10 pt-14">
+  <div className="w-full flex flex-col text-center text-white text-7xl bg-blue bg-opacity-10 pt-14">
       Miles de productos al alcance de tu mano
-      <div className='mt-10 text-1xl flex flex-col'>
+      <div className='mt-10 text-2xl flex flex-col'>
             <span>Disponemos de mas de 500 metros cuadrados de almacen</span>
             <span>Tenemos productos de ultima genereacion</span>
       </div>

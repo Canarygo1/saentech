@@ -8,10 +8,10 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 
-import Header from "./header"
 import "./layout.css"
 import "./style.css"
 import Footer from "./footer"
+import Header from "./header/header"
 
 const Layout = ({ children }) => {
   return (

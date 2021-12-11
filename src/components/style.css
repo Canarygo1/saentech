@@ -2,8 +2,8 @@
   background-image: url("./../images/bachground-cohete.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 1119px;
+  background-size: contain;
+
 }
 
 .fit-content{
@@ -55,7 +55,122 @@
   background-image: url("./../images/logoPedidos.png");
 }
 
+.icono-envios{
+  background-image: url("./../images/logoEnvios.png");
+}
+
+.icono-soporte{
+  background-image: url("./../images/logoSoporte.png");
+}
+
 .section-products{
   max-height: 600px;
   overflow: hidden;
 }
+
+.hamburger-menu {
+  cursor: pointer;
+}
+
+.bar,
+.bar:after,
+.bar:before {
+  width: 80px;
+  height: 10px;
+}
+
+.bar {
+  position: relative;
+  transform: translateY(25px);
+  background: white;
+  transition: all 0ms 300ms;
+}
+.bar.animate {
+  width: 60px;
+  background: rgba(255, 255, 255, 0);
+}
+
+.bar:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  background: white;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25px;
+  background: white;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar.animate:after {
+  top: 0;
+  width: 60px;
+  background: black;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar.animate:before {
+  bottom: 0;
+  width: 60px;
+  background: black;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+}
+
+.show-menu {
+  animation: show-menu linear 0.1s;
+  right: 0;
+}
+
+.hide-menu {
+  animation: hide-menu linear 0.1s;
+  right: -100%;
+}
+
+.menu-content {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  align-items: center;
+}
+
+@keyframes show-menu {
+  from {
+    right: -100%;
+    opacity: 0;
+  }
+
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes hide-menu {
+  from {
+    right: 0;
+    opacity: 1;
+  }
+
+  to {
+    right: -100%;
+    opacity: 0;
+  }
+}
+
+

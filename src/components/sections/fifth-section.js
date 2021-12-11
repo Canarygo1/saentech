@@ -2,8 +2,8 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 const FifthSection = () => (
-  <div className="w-full hidden text-white text-7xl bg-primary py-24 md:flex md:justify-between px-10">
-    <div className='flex flex-col'>
+  <div className="w-full text-white text-7xl bg-primary py-24 flex justify-evenly flex-wrap px-10">
+    <div className='flex flex-col py-5'>
       <span className="my-3">
         ¿Listo para formar parte
       </span>
@@ -11,7 +11,7 @@ const FifthSection = () => (
         de Saentech?
       </span>
     </div>
-    <div className='self-center'>
+    <div className='self-center py-5'>
       <div className="bg-white rounded-full px-8 py-3 text-darkBlue text-xl">
         <StaticImage
           src="./../../images/iconoEmail.png"

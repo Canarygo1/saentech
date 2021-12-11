@@ -2,8 +2,8 @@ import * as React from "react"
 import Separator from "../separator"
 
 const FirstSection = () => (
-  <div className="first-section w-full text-white hidden md:flex">
-    <div className='w-auto flex flex-col content-first-section fit-content'>
+  <div className="first-section w-full text-white flex items-end xl:items-start justify-center xl:justify-start h-100 xl:h-110">
+    <div className='w-auto flex flex-col content-first-section fit-content hidden xl:flex'>
       <Separator dataHeigth="270px" dataWidth="1px"/>
       <span className='my-2'>
         Lanza tu negocio con los
@@ -22,6 +22,9 @@ const FirstSection = () => (
           Nuestras Ventajas
         </div>
       </div>
+    </div>
+    <div className='w-1/2 bg-primary rounded-2xl text-black py-3 px-4 flex xl:hidden justify-center fixed bottom-4'>
+      Contáctanos
     </div>
   </div>
 )
