@@ -90,11 +90,14 @@ export default function Header() {
         <div className={"bg-white flex flex-col hide-menu menu-content z-10 js-menu-content"}>
           <a href="#" className="close close-js" onClick={closeMenu} />
           <div className="w-full text-black flex flex flex-col text-center items-center text-2xl mt-20">
-            <Link to="/"><span className="py-3 w-full mx-6 my-1 hover:bg-primary hover:text-white">Inicio</span></Link>
-            <span className="py-3 w-full mx-6 my-1 hover:bg-primary hover:text-white">Conocenos</span>
-            <span className="py-3 w-full mx-6 my-1 hover:bg-primary hover:text-white">Proveedores</span>
-            <Link to="/saentech-pro"><span className="py-3 w-full mx-6 my-1 hover:bg-primary hover:text-white">Saentech Pro</span></Link>
-            <span className="py-3 w-full mx-6 my-1 hover:bg-primary hover:text-white">Contacto</span>
+            <Link to="/" className="my-3"><span className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Inicio</span></Link>
+            <Link to="/" className="my-3"><span
+              className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Conocenos</span></Link>
+            <Link to="/" className="my-3"><span
+              className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Proveedores</span></Link>
+            <Link to="/saentech-pro" className="my-3"><span className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Saentech Pro</span></Link>
+            <Link to="/" className="my-3"><span
+              className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Contacto</span></Link>
           </div>
         </div>
       </div>

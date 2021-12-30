@@ -3,7 +3,7 @@ import Separator from "../separator"
 
 const SecondSection = () => (
   <div className="w-full text-center text-white text-7xl mt-10">
-    Conviértete en distribuidor oficial.
+    <span className="leading-snug md:leading-normal">Conviértete en distribuidor oficial.</span>
     <Separator dataHeigth="50px" dataWidth="1px" />
     <div className="flex distributor-section flex-wrap xl:justify-evenly flex-col-reverse xl:flex-row items-center">
       <div className="image-distribuidor mt-1" />

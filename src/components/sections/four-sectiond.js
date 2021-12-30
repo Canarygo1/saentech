@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const FourSection = () => (
   <div className="w-full flex flex-col text-center text-white text-7xl bg-opacity-10 py-14">
-    Opiniones de nuestros clientes
+    <span className="leading-snug md:leading-normal">Opiniones de nuestros clientes</span>
       <Separator dataHeigth="50px" dataWidth="1px" />
       <div className='flex items-center flex-wrap justify-evenly'>
           <div className='rounded-lg border-2 border-secondary card-opiniones p-9 mb-10 xl:mb-0 flex flex-col items-center'>
