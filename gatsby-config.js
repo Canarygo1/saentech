@@ -10,6 +10,20 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: "AIzaSyBoIra_YHv5qbebEGoQdMnhYbOZjybME_k",
+          authDomain: "saentech-3e813.firebaseapp.com",
+          projectId: "saentech-3e813",
+          storageBucket: "saentech-3e813.appspot.com",
+          messagingSenderId: "329888571041",
+          appId: "1:329888571041:web:a6aee83f8d39aaad099ae0",
+          measurementId: "G-ZP8SYNM25E"
+        }
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
