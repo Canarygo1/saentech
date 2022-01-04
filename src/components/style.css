@@ -38,8 +38,21 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 641px;
-  width: 611px;
+  height: 341px;
+  width: 311px;
+}
+
+@media (min-width: 700px) {
+  .image-distribuidor{
+    height: 641px;
+    width: 611px;
+  }
+}
+@media (min-width: 400px) {
+  .image-distribuidor{
+    height: 441px;
+    width: 411px;
+  }
 }
 
 .icon-background{
