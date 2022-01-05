@@ -1,11 +1,40 @@
 import React, { useState } from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import firebase from "firebase/compat"
+
+import { useAuthState } from 'react-firebase-hooks/auth';
+import app from 'gatsby-plugin-firebase-v9.0'
+import { getAuth, signInWithEmailAndPassword,setPersistence,browserSessionPersistence } from 'firebase/auth'
+import { navigate } from "gatsby"
+import { UserCredential } from "@firebase/auth"
 
 
 const Login = () => {
   const [email,setEmail] = useState('');
   const [password,setPassword] = useState('');
+
+  let login = async (user, password) => {
+    const auth = getAuth();
+    let test = auth.currentUser;
+    setPersistence(auth, browserSessionPersistence)
+      .then(() => {
+        return signInWithEmailAndPassword(auth,"1234@1.com", "123456").then((userCredential)=>{
+          if (userCredential.user){
+            console.log(userCredential.user)
+            navigate("/app/pro" )
+          }
+          }
+        );
+      })
+      .catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+      });
+
+    console.log(test)
+
+  }
+
 
   return (
     <div className="flex flex-col justify-center h-screen bg-blue-700 items-center">
@@ -40,20 +69,14 @@ const Login = () => {
         <div className="flex flex-col items-center">
           <button
             className="bg-primary w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="button">
+            type="button" onClick={()=>login(email,password)}>
             Entrar
           </button>
         </div>
       </form>
     </div>
   )
-  async function login(){
-    try {
-      await firebase.login(email, password)
-    }catch (error){
-      alert(error)
-    }
-  }
+
 }
 
 export default Login

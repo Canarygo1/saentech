@@ -10,7 +10,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
-      resolve: "gatsby-plugin-firebase",
+      resolve: "gatsby-plugin-firebase-v9.0",
       options: {
         credentials: {
           apiKey: "AIzaSyBoIra_YHv5qbebEGoQdMnhYbOZjybME_k",
