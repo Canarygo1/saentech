@@ -2,11 +2,13 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+
     extend: {
       height: {
         '100': '40rem',
         '110': '64rem',
       },
+
       screens: {
         'sm': '640px',
         'md': '768px',
@@ -25,6 +27,9 @@ module.exports = {
       darkBlue: '#455880',
       darkGreen: '#3A8484',
       lightGreen: '#49A280',
+    },
+    fontFamily:{
+      'display': ['Roboto'],
     },
     fontSize: {
       'xs': '10px',

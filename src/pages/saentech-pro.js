@@ -6,7 +6,7 @@ import Separator from "../components/separator"
 
 const SaentechProPage = () => (
   <Layout>
-    <Seo title="Home" />
+    <Seo title="Saentech Pro" />
     <div className="flex flex-col w-full mx-10 mt-28 xl:mt-0 text-white">
       <span className="text-3xl">Saentech Pro</span>
       <div className="w-3/4 mt-10 flex flex-col text-lg">

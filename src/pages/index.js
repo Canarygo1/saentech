@@ -8,9 +8,17 @@ import Separator from "../components/separator"
 import ThirdSection from "../components/sections/third-section"
 import FourSection from "../components/sections/four-sectiond"
 import FifthSection from "../components/sections/fifth-section"
+import { useEffect } from "react"
+import app from 'gatsby-plugin-firebase-v9.0'
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
-const IndexPage = () => (
-  <Layout>
+
+const IndexPage = () => {
+
+useEffect(()=>{
+
+})
+  return <Layout>
     <Seo title="Home" />
     <FirstSection />
     <Separator dataHeigth="50px" dataWidth="1px" />
@@ -23,6 +31,6 @@ const IndexPage = () => (
     <FifthSection />
     <Separator dataHeigth="80px" dataWidth="1px" />
   </Layout>
-)
+}
 
 export default IndexPage
