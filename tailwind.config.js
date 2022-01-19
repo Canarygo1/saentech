@@ -22,11 +22,13 @@ module.exports = {
       black: '#000000',
       white: '#FFFFFF',
       primary: '#BDD345',
+      lightgrey:'#F6F6F6',
       secondary: '#58585A',
       blue: '#0084C1',
       darkBlue: '#455880',
       darkGreen: '#3A8484',
       lightGreen: '#49A280',
+      blackFont: '#555555',
     },
     fontFamily:{
       'display': ['Roboto'],

@@ -8,7 +8,8 @@ const FourSection = () => (
       <Separator dataHeigth="50px" dataWidth="1px" />
       <div className='flex items-center flex-wrap justify-evenly'>
           <div className='rounded-lg border-2 border-secondary card-opiniones p-9 mb-10 xl:mb-0 flex flex-col items-center'>
-            <span className='text-xl text-left'>Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!</span>
+            <span className='text-xl text-left'>Completely beautiful website and amazing support!
+              This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!</span>
             <StaticImage
               src="./../../images/opinion-1.png"
               width={63}

@@ -1,9 +1,21 @@
 
 .first-section{
-  background-image: url("./../images/bachground-cohete.png");
+  background-image: url("./../images/cohete.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  height: 120vh;
+
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .first-section{
+    background-image: url("./../images/cohete_movil.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+  }
 
 }
 
@@ -38,9 +50,7 @@
   background-image: url("./../images/logoDistribuidores.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 641px;
-  width: 611px;
+  background-size: contain;
 }
 
 .icon-background{
@@ -76,8 +86,8 @@
 .bar,
 .bar:after,
 .bar:before {
-  width: 70px;
-  height: 7px;
+  width: 50px;
+  height: 6px;
 }
 
 .bar {

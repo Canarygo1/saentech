@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@fontsource/open-sans": "^4.5.2",
+    "axios": "^0.25.0",
     "firebase": "^9.6.1",
     "gatsby": "^4.1.6",
     "gatsby-plugin-firebase-v9.0": "^1.0.2",
@@ -24,6 +25,7 @@
     "react-firebase-hooks": "^4.0.1",
     "react-focus-lock": "^2.6.0",
     "react-helmet": "^6.1.0",
+    "react-responsive-carousel": "^3.2.22",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
@@ -39,7 +41,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop ",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",

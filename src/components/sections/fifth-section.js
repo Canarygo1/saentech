@@ -4,12 +4,9 @@ import { StaticImage } from "gatsby-plugin-image"
 const FifthSection = () => (
   <div className="w-full text-white text-7xl bg-primary py-24 flex justify-evenly flex-wrap px-10">
     <div className='flex flex-col py-5'>
-      <span className="my-3">
-        ¿Listo para formar parte
-      </span>
-      <span className='my-3 '>
-        de Saentech?
-      </span>
+      <p className="my-3 leading-none">
+        ¿Listo para formar parte <br/> de Saentech?
+      </p>
     </div>
     <div className='self-center py-5'>
       <div className="bg-white rounded-full px-8 py-3 text-darkBlue text-xl">

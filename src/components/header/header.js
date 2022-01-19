@@ -25,45 +25,64 @@ export default function Header() {
   }
 
   return (
-    <header className="text-white mb-16">
+    <header className="text-white mb-16 bg flex flex-col ">
+      <div className={"mt-2 rounded-lg self-center border-primary border"}>
+         <span className=" text-primary text-lg mx-2">
+          Horario de L-J: 08:30 - 18:00 V: 08:30 - 15:00
+        </span>
+      </div>
       <div
-        className="header-content hidden xl:flex xl:flex-wrap xl:items-center xl:justify-between xl:justify-around xl:py-2 xl:px-5 xl:px-0">
-        <StaticImage
-          src="./../../images/logo.png"
-          width={63}
-          quality={100}
-          formats={["auto", "webp", "avif"]}
-          alt="A logo"
-        />
+        className="header-content  hidden xl:flex xl:flex-wrap xl:items-center xl:justify-between xl:justify-around xl:py-2 xl:px-5 xl:px-0">
+        <Link to={"/"}>
+
+          <StaticImage
+            src="./../../images/logo.png"
+            width={63}
+            quality={100}
+            formats={["auto", "webp", "avif"]}
+            alt="A logo"
+          />
+        </Link>
+
         <div className="hidden md:block">
           <Link to="/"><span className="text-lg mx-6">
         Inicio
           </span></Link>
-          <span className="text-lg mx-6">
+          <Link to={"#third"}>
+          <span className="text-lg mx-6 ">
         Conocenos
       </span>
+          </Link>
+          <Link to="/catalogo">
           <span className="text-lg mx-6">
-        Proveedores
+        Catalogo
       </span>
+          </Link>
           <Link to="/saentech-pro">
           <span className="text-lg mx-6">
         Saentech Pro
       </span>
           </Link>
+          <Link to="/contacto">
+
           <span className="text-lg mx-6">
         Contacto
       </span>
+          </Link>
+
         </div>
+
         <div className="hidden md:flex items-center">
-        <span className="text-secondary text-lg mx-2">
-        +00 123 456 789
-        </span>
-          <div className="bg-primary rounded-full py-1 px-4 mx-2 text-black">
+
+          <a href="tel:+34922616266" className="   text-white ">922 616 266</a>
+
+          <Link to={"/contacto"} className="bg-primary rounded-full py-1 px-4 mx-2 text-black">
             Contáctanos
-          </div>
-          <div className="bg-transparent border-2 border-solid border-primary rounded-full py-1 px-4 mx-2">
+          </Link>
+          <Link to={"http://pedidos.saentech.com/ogonlineapp/login/"} target="_blank"
+                className="bg-transparent border-2 border-solid border-primary rounded-full py-1 px-4 mx-2">
             Acceso Clientes
-          </div>
+          </Link>
         </div>
         <div className="block md:hidden">
           <StaticImage
@@ -76,7 +95,7 @@ export default function Header() {
         </div>
       </div>
       <div
-        className="header-content xl:hidden flex items-center justify-between py-4 px-5 fixed top-1 left-1">
+        className="header-content xl:hidden flex items-center  justify-between py-4 px-5 fixed top-1 left-1">
         <StaticImage
           src="./../../images/logo.png"
           width={63}
@@ -84,19 +103,21 @@ export default function Header() {
           formats={["auto", "webp", "avif"]}
           alt="A logo"
         />
-        <div className="hamburger-menu menu z-20" onClick={menuFunction}>
-          <div className="bar" />
+        <div className="hamburger-menu menu z-12" onClick={menuFunction}>
+          <div className="bar " />
         </div>
         <div className={"bg-white flex flex-col hide-menu menu-content z-10 js-menu-content"}>
           <a href="#" className="close close-js" onClick={closeMenu} />
           <div className="w-full text-black flex flex flex-col text-center items-center text-2xl mt-20">
-            <Link to="/" className="my-3"><span className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Inicio</span></Link>
+            <Link to="/" className="my-3"><span
+              className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Inicio</span></Link>
             <Link to="/" className="my-3"><span
               className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Conocenos</span></Link>
-            <Link to="/" className="my-3"><span
-              className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Proveedores</span></Link>
-            <Link to="/saentech-pro" className="my-3"><span className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Saentech Pro</span></Link>
-            <Link to="/" className="my-3"><span
+            <Link to="/catalogo" className="my-3"><span
+              className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Catalogos</span></Link>
+            <Link to="/saentech-pro" className="my-3"><span
+              className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Saentech Pro</span></Link>
+            <Link to="/contacto" className="my-3"><span
               className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Contacto</span></Link>
           </div>
         </div>
