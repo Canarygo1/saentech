@@ -20,6 +20,7 @@ useEffect(()=>{
 })
   return <Layout>
     <Seo title="Home" />
+    <Separator dataHeigth="100px" dataWidth="1px" />
     <FirstSection />
     <Separator dataHeigth="50px" dataWidth="1px" />
     <SecondSection />

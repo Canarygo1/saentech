@@ -4,8 +4,6 @@ import Seo from "../components/seo"
 import { useEffect } from "react"
 import Textfield from "../components/textfield"
 
-
-
 const Contacto = () => {
 
   useEffect(()=>{
@@ -24,6 +22,16 @@ const Contacto = () => {
           <form className="flex flex-col ">
             <Textfield id={"name"} htmlFor={"name"} label={"Nombre"} placeholder={"Nombre"}/>
             <Textfield id={"email"} htmlFor={"email"} label={"Correo Electronico"} placeholder={"Correo"}/>
+            <div className="my-3 w-full ">
+              <label className="block text-white text-sm font-bold mb-2" htmlFor="consultType">
+                Tipo de consulta
+              </label>
+              <select className="shadow appearance-none border border-primary rounded w-full py-2 px-1 leading-tight focus:outline-none focus:shadow-outline" id="consultType">
+                <option className="prueba">Comercial</option>
+                <option className="prueba">Técnico</option>
+              </select>
+            </div>
+
             <Textfield id={"asunto"} htmlFor={"asunto"} label={"Asunto"} placeholder={"Asunto"}/>
               <label className="block text-white text-sm font-bold mb-2" htmlFor={"Mensaje"}>
                 Mensaje
