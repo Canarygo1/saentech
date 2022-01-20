@@ -25,16 +25,15 @@ export default function Header() {
   }
 
   return (
-    <header className="text-white mb-16 bg flex flex-col ">
-      <div className={"mt-2 rounded-lg self-center border-primary border"}>
+    <header className="text-white mb-16 flex flex-col">
+      <div className={"mt-2 rounded-lg self-center hidden xl:block border-primary border"}>
          <span className=" text-primary text-lg mx-2">
           Horario de L-J: 08:30 - 18:00 V: 08:30 - 15:00
         </span>
       </div>
       <div
-        className="header-content  hidden xl:flex xl:flex-wrap xl:items-center xl:justify-between xl:justify-around xl:py-2 xl:px-5 xl:px-0">
+        className="hidden xl:flex xl:flex-wrap xl:items-center xl:justify-between xl:justify-around xl:py-2 xl:px-5 xl:px-0">
         <Link to={"/"}>
-
           <StaticImage
             src="./../../images/logo.png"
             width={63}
@@ -95,30 +94,38 @@ export default function Header() {
         </div>
       </div>
       <div
-        className="header-content xl:hidden flex items-center  justify-between py-4 px-5 fixed top-1 left-1">
-        <StaticImage
-          src="./../../images/logo.png"
-          width={63}
-          quality={100}
-          formats={["auto", "webp", "avif"]}
-          alt="A logo"
-        />
-        <div className="hamburger-menu menu z-12" onClick={menuFunction}>
-          <div className="bar " />
+        className="xl:hidden block items-center justify-between fixed top-0 left-0 bg-black pb-2 header-scroll">
+        <div className={"mt-2 mx-4 rounded-lg block xl:hidden text-center border-primary border"}>
+         <span className=" text-primary text-lg mx-2">
+          Horario de L-J: 08:30 - 18:00 V: 08:30 - 15:00
+        </span>
         </div>
-        <div className={"bg-white flex flex-col hide-menu menu-content z-10 js-menu-content"}>
-          <a href="#" className="close close-js" onClick={closeMenu} />
-          <div className="w-full text-black flex flex flex-col text-center items-center text-2xl mt-20">
-            <Link to="/" className="my-3"><span
-              className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Inicio</span></Link>
-            <Link to="/" className="my-3"><span
-              className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Conocenos</span></Link>
-            <Link to="/catalogo" className="my-3"><span
-              className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Catalogos</span></Link>
-            <Link to="/saentech-pro" className="my-3"><span
-              className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Saentech Pro</span></Link>
-            <Link to="/contacto" className="my-3"><span
-              className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Contacto</span></Link>
+        <div className="w-screen justify-between flex mt-2">
+          <StaticImage
+            className="ml-3"
+            src="./../../images/logo.png"
+            width={63}
+            quality={100}
+            formats={["auto", "webp", "avif"]}
+            alt="A logo"
+          />
+          <div className="hamburger-menu menu mr-3" onClick={menuFunction}>
+            <div className="bar " />
+          </div>
+          <div className={"bg-white flex flex-col hide-menu menu-content z-10 js-menu-content"}>
+            <a href="#" className="close close-js" onClick={closeMenu} />
+            <div className="w-full text-black flex flex flex-col text-center items-center text-2xl mt-20">
+              <Link to="/" className="my-3"><span
+                className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Inicio</span></Link>
+              <Link to="/" className="my-3"><span
+                className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Conocenos</span></Link>
+              <Link to="/catalogo" className="my-3"><span
+                className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Catalogos</span></Link>
+              <Link to="/saentech-pro" className="my-3"><span
+                className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Saentech Pro</span></Link>
+              <Link to="/contacto" className="my-3"><span
+                className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Contacto</span></Link>
+            </div>
           </div>
         </div>
       </div>

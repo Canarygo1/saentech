@@ -45,16 +45,16 @@ const FirstSection = () => {
     }
 
     // getImages()
-    getXML()
+    // getXML()
 
   },[])
   return <div className={"flex flex-col justify-center items-center"}>
-    <div className={"visible w-9/12 "}>
+    <div className={"visible w-9/12 z-ocult"}>
       <Carousel showThumbs={false} showStatus={false}>
         {images}
       </Carousel>
     </div>
-
+    <Separator dataHeigth="100px" dataWidth="1px" />
     <div
       className="first-section w-full text-white flex items-end xl:items-start justify-center xl:justify-start h-100 xl:h-110">
       <div className="w-auto flex flex-col content-first-section fit-content hidden xl:flex">
@@ -81,10 +81,6 @@ const FirstSection = () => {
       <div className="w-1/2 bg-primary rounded-2xl text-black py-3 px-4 flex xl:hidden justify-center fixed bottom-4">
         Contáctanos
       </div>
-      <div>
-
-      </div>
-
     </div>
     <div className={"w-2/3 mt-6 flex flex-row justify-between"}>
       <div>

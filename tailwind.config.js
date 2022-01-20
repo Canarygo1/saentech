@@ -8,7 +8,9 @@ module.exports = {
         '100': '40rem',
         '110': '64rem',
       },
-
+      zIndex: {
+        'ocult': '-20',
+      },
       screens: {
         'sm': '640px',
         'md': '768px',

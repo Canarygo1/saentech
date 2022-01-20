@@ -1,18 +1,20 @@
+.cmp-carousel{
+  z-index: -20;
+}
 
 .first-section{
   background-image: url("./../images/cohete.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   height: 120vh;
-
 }
 @media (min-width: 0px) and (max-width: 767px) {
   .first-section{
     background-image: url("./../images/cohete_movil.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     height: 100vh;
 
   }
@@ -81,6 +83,11 @@
 
 .hamburger-menu {
   cursor: pointer;
+  z-index: 99;
+}
+
+.header-scroll{
+  z-index: 9999;
 }
 
 .bar,
@@ -133,13 +140,6 @@
   background: black;
   transform: rotate(-45deg);
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.menu {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 20;
 }
 
 .show-menu {
