@@ -3,6 +3,12 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { useEffect } from "react"
 import Textfield from "../components/textfield"
+import Select from 'react-select';
+
+const options = [
+  { value: 'comercial', label: 'Comercial' },
+  { value: 'tecnico', label: 'Técnico' }
+]
 
 const Contacto = () => {
 
@@ -26,12 +32,15 @@ const Contacto = () => {
               <label className="block text-white text-sm font-bold mb-2" htmlFor="consultType">
                 Tipo de consulta
               </label>
-              <select className="shadow appearance-none border border-primary rounded w-full py-2 px-1 leading-tight focus:outline-none focus:shadow-outline" id="consultType">
-                <option className="prueba">Comercial</option>
-                <option className="prueba">Técnico</option>
-              </select>
+              <Select
+                className="basic-single"
+                classNamePrefix="select"
+                defaultValue={options[0]}
+                isClearable={true}
+                name="consultType"
+                options={options}
+              />
             </div>
-
             <Textfield id={"asunto"} htmlFor={"asunto"} label={"Asunto"} placeholder={"Asunto"}/>
               <label className="block text-white text-sm font-bold mb-2" htmlFor={"Mensaje"}>
                 Mensaje

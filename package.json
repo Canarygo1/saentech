@@ -26,6 +26,7 @@
     "react-focus-lock": "^2.6.0",
     "react-helmet": "^6.1.0",
     "react-responsive-carousel": "^3.2.22",
+    "react-select": "^5.2.2",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
