@@ -1,11 +1,22 @@
-import React from "react"
+import React, { useState } from "react"
 
 function AdminHeader({ children }) {
+  let [isOpen, setOpen] = useState(false);
+
+
+  const openMenu = ()=>{
+    const btn = document.querySelector(".mobile-menu-button");
+    const sidebar = document.querySelector(".sidebar");
+
+      sidebar.classList.toggle("-translate-x-full");
+    setOpen(!isOpen);
+    console.log(isOpen)
+  }
   return (
     <div className="relative min-h-screen md:flex text-white ">
       <div className="text-gray-100 flex justify-between bg-primary md:hidden">
         <a href="#" className="block p-4 text-white font-bold">Panel Administración</a>
-        <button className="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">
+        <button className="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700" onClick={()=>openMenu()} name={isOpen}>
           <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -43,7 +54,7 @@ function AdminHeader({ children }) {
               <a className="font-bold text-lg text">Saentech</a>
               <a className="underline text-sm">Cod: #123456</a>
           </div>
-          <div className="w-24">
+          <div className="w-24 " >
             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
               <path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z"/>
             </svg>

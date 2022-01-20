@@ -19,10 +19,10 @@ function Home(props) {
           </div>
         <div className="flex flex-row h-5/6">
           <div className="w-2/3 h-auto grid grid-cols-2 gap-2">
-            <PhotoCard photoUrl={""} ></PhotoCard>
-            <PhotoCard photoUrl={""} ></PhotoCard>
-            <PhotoCard photoUrl={""} ></PhotoCard>
-            <PhotoCard photoUrl={""} ></PhotoCard>
+            <PhotoCard photoUrl={""}></PhotoCard>
+            <PhotoCard photoUrl={""}></PhotoCard>
+            <PhotoCard photoUrl={""}></PhotoCard>
+            <PhotoCard photoUrl={""}></PhotoCard>
           </div>
           <div className="bg-primary w-1/3 ">
             <a >asd</a>

@@ -29,7 +29,7 @@ const FirstSection = () => {
         const url = await getDownloadURL(starsRef)
         images2.push(
           <div>
-            <img src={url} alt="A kitten" className={"h-36 md:h-auto "} />
+            <img src={url} alt="A kitten" className={"h-36 md:h-auto"} />
           </div>,
         );
 
@@ -39,8 +39,7 @@ const FirstSection = () => {
     async function getXML(){
     const getData = await axios.get("http://2001176:Teide02@pedidos.saentech.com/ogonlineapp/preciosxml/",
       {
-        headers: {
-        },
+        withCredentials:true,
       });
       console.log(getData.headers)
     }
