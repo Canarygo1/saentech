@@ -10,29 +10,18 @@ const ThirdSection = () => (
       <div className='self-center bg-primary rounded-full fit-content text-lg py-1 px-4 mx-3 mt-10'>
             Conócenos
       </div>
-        <div className='flex flex-wrap section-products justify-center'>
-          <div className='flex flex-col mr-6'>
-            <div className='card bg-secondary mt-6'></div>
-            <div className='card bg-secondary mt-6'></div>
-            <div className='card bg-secondary mt-6'></div>
-          </div>
-          <div className='flex flex-col mr-6 mt-28'>
-            <div className='card bg-secondary mt-6'></div>
-            <div className='card bg-secondary mt-6'></div>
-          </div>
-          <div className='flex flex-col mr-6 mt-36'>
-            <div className='card bg-secondary mt-6'></div>
-            <div className='card bg-secondary mt-6'></div>
-          </div>
-          <div className='flex flex-col mr-6 mt-44'>
-            <div className='card bg-secondary mt-6'></div>
-            <div className='card bg-secondary mt-6'></div>
-          </div>
-          <div className='flex flex-col mt-24'>
-            <div className='card bg-secondary mt-6'></div>
-            <div className='card bg-secondary mt-6'></div>
-          </div>
-        </div>
+      <div className="flex flex-wrap justify-center mt-5 my-5">
+        <div className='card bg-secondary mx-2 my-2'></div>
+        <div className='card bg-secondary mx-2 my-2'></div>
+        <div className='card bg-secondary mx-2 my-2'></div>
+        <div className='card bg-secondary mx-2 my-2'></div>
+        <div className='card bg-secondary mx-2 my-2'></div>
+        <div className='card bg-secondary mx-2 my-2'></div>
+        <div className='card bg-secondary mx-2 my-2'></div>
+        <div className='card bg-secondary mx-2 my-2'></div>
+        <div className='card bg-secondary mx-2 my-2'></div>
+        <div className='card bg-secondary mx-2 my-2'></div>
+      </div>
 </div>
 )
 

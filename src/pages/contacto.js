@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { useEffect } from "react"
 import Textfield from "../components/textfield"
-import Select from 'react-select';
 
 const options = [
   { value: 'comercial', label: 'Comercial' },
@@ -28,18 +27,30 @@ const Contacto = () => {
           <form className="flex flex-col ">
             <Textfield id={"name"} htmlFor={"name"} label={"Nombre"} placeholder={"Nombre"}/>
             <Textfield id={"email"} htmlFor={"email"} label={"Correo Electronico"} placeholder={"Correo"}/>
-            <div className="my-3 w-full ">
-              <label className="block text-white text-sm font-bold mb-2" htmlFor="consultType">
-                Tipo de consulta
-              </label>
-              <Select
-                className="basic-single"
-                classNamePrefix="select"
-                defaultValue={options[0]}
-                isClearable={true}
-                name="consultType"
-                options={options}
-              />
+            <label className="block text-white text-sm font-bold mb-2 my-3" htmlFor="comercial">
+              Tipo de consulta
+            </label>
+            <div className="w-full flex ">
+              <div className="flex items-center mx-4">
+                <input
+                  className="mr-2"
+                  id="comercial"
+                  name="comercial"
+                  type="checkbox" />
+                <label className="block text-white text-sm font-bold mb-2 pt-2" htmlFor="comercial">
+                  Comercial
+                </label>
+              </div>
+              <div className="flex items-center mx-4">
+                <input
+                  className="mr-2"
+                  id="tecnico"
+                  name="tecnico"
+                  type="checkbox" />
+                <label className="block text-white text-sm font-bold mb-2 pt-2" htmlFor="tecnico">
+                  Técnico
+                </label>
+              </div>
             </div>
             <Textfield id={"asunto"} htmlFor={"asunto"} label={"Asunto"} placeholder={"Asunto"}/>
               <label className="block text-white text-sm font-bold mb-2" htmlFor={"Mensaje"}>
