@@ -31,6 +31,7 @@ module.exports = {
       darkGreen: '#3A8484',
       lightGreen: '#49A280',
       blackFont: '#555555',
+      error:'#F44336'
     },
     fontFamily:{
       'display': ['Roboto'],

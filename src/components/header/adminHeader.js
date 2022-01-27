@@ -7,7 +7,6 @@ function AdminHeader({ children }) {
   const openMenu = ()=>{
     const btn = document.querySelector(".mobile-menu-button");
     const sidebar = document.querySelector(".sidebar");
-
       sidebar.classList.toggle("-translate-x-full");
     setOpen(!isOpen);
     console.log(isOpen)
@@ -34,13 +33,13 @@ function AdminHeader({ children }) {
           <span className="text-2xl font-extrabold">Saentech</span>
         </a>
         <nav>
-          <a href="#" className="block py-2.5 px-4 hover:bg-white  rounded transition duration-200 hover:bg-blue-700 hover:text-black">
+          <a href="/app/admin" className="block py-2.5 px-4 hover:bg-white hover:text-black rounded transition duration-200 ">
             Inicio
           </a>
-          <a href="" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
+          <a href="/app/statistics" className="block py-2.5 px-4 rounded hover:bg-white hover:text-black transition duration-200">
             Estadisticas
           </a>
-          <a href="" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
+          <a href="/app/profile" className="block py-2.5 px-4 rounded hover:bg-white hover:text-black transition duration-200">
             Mi perfil
           </a>
         </nav>
