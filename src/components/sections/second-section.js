@@ -2,7 +2,7 @@ import * as React from "react"
 import Separator from "../separator"
 
 const SecondSection = () => (
-  <div className="max-w-full text-center text-white text-7xl mt-10 ">
+  <div id="second-section" className="max-w-full text-center text-white text-7xl mt-10 ">
     <span className="leading-snug md:leading-normal">Conviértete en distribuidor oficial.</span>
     <Separator dataHeigth="50px" dataWidth="1px" />
     <div className="flex distributor-section items-start flex-wrap xl:justify-evenly flex-col-reverse xl:flex-row md:items-center ">

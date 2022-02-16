@@ -1,11 +1,9 @@
 import React, { useState } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-import { useAuthState } from 'react-firebase-hooks/auth';
 import app from 'gatsby-plugin-firebase-v9.0'
 import { getAuth, signInWithEmailAndPassword,setPersistence,browserSessionPersistence } from 'firebase/auth'
 import { navigate } from "gatsby"
-import { UserCredential } from "@firebase/auth"
 
 
 const Login = () => {
@@ -13,7 +11,7 @@ const Login = () => {
   const [password,setPassword] = useState('');
 
   let login = async (user, password) => {
-    const auth = getAuth();
+    const auth = getAuth(app);
     let test = auth.currentUser;
     setPersistence(auth, browserSessionPersistence)
       .then(() => {

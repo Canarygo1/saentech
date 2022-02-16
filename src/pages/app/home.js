@@ -6,10 +6,11 @@ import { uploadFromBlobAsync } from "../../util/firebase"
 import { StaticImage } from "gatsby-plugin-image"
 import { doc, getDoc, getFirestore, updateDoc, arrayUnion, arrayRemove } from "firebase/firestore"
 import { getDownloadURL, getStorage, ref } from "firebase/storage"
+import app from 'gatsby-plugin-firebase-v9.0'
 
 
 function Home(props) {
-  const db = getFirestore();
+  const db = getFirestore(app);
   const docImages = doc(db, "galeria", "imagenes");
 
   const [images, setImages] = useState([{ name:"1.jpeg",url:"" },{ name:"2.jpeg",url:"" },{ name:"3.jpeg",url:"" },{ name:"4.jpeg",url:"" }]);
@@ -25,7 +26,7 @@ function Home(props) {
     let imgName = docSnap.data().url
     console.log(imgName);
     for (let i = 0; i < imgName.length; i++) {
-      const storage = getStorage();
+      const storage = getStorage(app);
       const starsRef = await ref(storage, imgName[i]);
       const url = await getDownloadURL(starsRef)
       let image = { name:imgName[i], url:url}

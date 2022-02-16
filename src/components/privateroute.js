@@ -2,9 +2,11 @@ import React from "react"
 import { navigate } from "gatsby"
 import { isLoggedIn } from "../services/auth"
 import { getAuth, onAuthStateChanged,signOut } from "firebase/auth"
+import app from 'gatsby-plugin-firebase-v9.0'
 
 const PrivateRoute = ({ component: Component, location, ...rest }) => {
-  const auth = getAuth();
+
+  const auth = getAuth(app);
   onAuthStateChanged(auth, (user) => {
     if (user) {
       const uid = user.uid;

@@ -3,6 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Separator from "../components/separator"
+import { Link } from "../../.cache/gatsby-browser-entry"
 
 const SaentechProPage = () => (
   <Layout>
@@ -25,6 +26,7 @@ const SaentechProPage = () => (
       <span className="text-2xl">Nuestros Servicios:</span>
       <Separator dataHeigth="40px" dataWidth="1px" />
       <div className="flex flex-wrap justify-around">
+        <Link to={"/saentech-pro/software"}>
         <div className="flex flex-col items-center">
           <div className="bg-blue w-56 h-56 my-5 rounded-3xl">
             <div className="bg-secondary w-full h-full rounded-3xl transform rotate-12" style={{
@@ -38,7 +40,8 @@ const SaentechProPage = () => (
           <span className="text-3xl">
             Software
           </span>
-        </div>
+        </div></Link>
+        <Link to={"/saentech-pro/network"}>
         <div className="flex flex-col items-center">
           <div className="bg-darkGreen w-56 h-56 my-5 rounded-3xl">
             <div className="bg-secondary w-full h-full rounded-3xl transform rotate-12" style={{
@@ -53,7 +56,8 @@ const SaentechProPage = () => (
               Redes y seguridad
           </span>
         </div>
-
+        </Link>
+        <Link to={"/saentech-pro/audiovisual"}>
         <div className="flex flex-col items-center">
           <div className="bg-lightGreen w-56 h-56 my-5 rounded-3xl">
             <div className="bg-secondary w-full h-full rounded-3xl transform rotate-12" style={{
@@ -68,6 +72,8 @@ const SaentechProPage = () => (
               Audiovisuales
           </span>
         </div>
+        </Link>
+        <Link to={"/saentech-pro/equipament"}>
         <div className="flex flex-col items-center">
           <div className="bg-primary w-56 h-56 my-5 rounded-3xl">
             <div className="bg-secondary w-full h-full rounded-3xl transform rotate-12" style={{
@@ -82,6 +88,7 @@ const SaentechProPage = () => (
                 Equipamiento
             </span>
         </div>
+        </Link>
       </div>
     </div>
     <Separator dataHeigth="100px" dataWidth="1px" />

@@ -1,3 +1,5 @@
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import * as React from "react"
 import Separator from "../separator"
@@ -6,9 +8,15 @@ import { Carousel } from "react-responsive-carousel"
 import { useEffect, useState } from "react"
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
 import { doc, getDoc,getFirestore } from "firebase/firestore";
-import axios from "axios"
-import { AnimatePresence, motion } from "framer-motion"
-import * as xml2js from 'xml2js';
+
+import AsusDistributor from "../distributors/AsusDistributor"
+import BrotherDistributor from "../distributors/brotherDistributor"
+import LenovoDistributor from "../distributors/lenovoDistributor"
+import MicrosoftDistributor from "../distributors/microsoftDistributor"
+import SamsungDistributor from "../distributors/samsungDistributor"
+import app from "gatsby-plugin-firebase-v9.0"
+import { Link } from "gatsby"
+import Slider from "react-slick";
 
 
 const FirstSection = () => {
@@ -16,15 +24,23 @@ const FirstSection = () => {
   const images2= [];
   const [selectedId, setSelectedId] = useState(null)
   let productos = [];
-
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 9000,
+    autoplaySpeed: 2000,
+    cssEase: "linear"
+  };
   useEffect(async () => {
 
     async function getImages() {
-      const db = getFirestore();
+      const db = getFirestore(app);
       const docRef = doc(db, "galeria", "imagenes");
       const docSnap = await getDoc(docRef);
       let imgName = docSnap.data().url
-      console.log(docSnap.data())
 
       for (let i = 0; i < imgName.length; i++) {
         const storage = getStorage();
@@ -50,7 +66,7 @@ const FirstSection = () => {
     </div>
     <Separator dataHeigth="100px" dataWidth="1px" />
     <div
-      className="first-section w-full text-white flex items-end xl:items-start justify-center xl:justify-start h-100 xl:h-110">
+      className="first-section w-full  flex items-end xl:items-start justify-center xl:justify-start h-100 xl:h-110">
       <div className="w-auto flex flex-col content-first-section fit-content hidden xl:flex">
         <Separator dataHeigth="270px" dataWidth="1px" />
         <span className="my-2">
@@ -64,67 +80,55 @@ const FirstSection = () => {
       </span>
         <div className="flex text-lg">
           <div className="bg-primary rounded-full text-black py-1 px-4 mx-3">
-            Contáctanos
+           <Link to={"contacto"}>Contáctanos</Link>
           </div>
-
           <div className="bg-white rounded-full text-black py-1 px-4 mx-3">
-            Nuestras Ventajas
+            <Link to={"#second-section"}>Nuestras Ventajas</Link>
+
           </div>
         </div>
       </div>
-      <div className="w-1/2 bg-primary rounded-2xl text-black py-3 px-4 flex xl:hidden justify-center fixed bottom-4">
-        Contáctanos
+        <div className="border-2 border-primary  rounded-full   xl:hidden justify-center flex fixed bottom-4 text-black w-1/3 h-14 xl:hidden flex flex-row">
+          <a href="https://goo.gl/maps/ascJ6JSLR8sDrFef6" className="h-full w-1/2 bg-primary border-l-2 rounded-l-full border-primary flex items-center justify-center">
+            <StaticImage
+              src="./../../images/pin.png"
+              width={24}
+              quality={100}
+              formats={["auto", "webp", "avif"]}
+              alt="A logo"
+            />
+          </a>
+          <a href="tel:+34922616266"  className="h-full w-1/2  border-l-2 rounded-r-full border-primary flex items-center justify-center bg-black">
+            <StaticImage
+              src="./../../images/phone-call.png"
+              width={24}
+              quality={100}
+              formats={["auto", "webp", "avif"]}
+              alt="A logo"
+            />
+          </a>
+
       </div>
     </div>
-    <div className={"md:w-2/3 mt-6 flex flex-row justify-between"}>
-      <motion.div className={"pt-2"} onMouseEnter={()=>setSelectedId("Asus")} >
-        <StaticImage src="../../images/marcas/Asus.png" alt="A kitten" />
-      </motion.div>
-      <motion.div className={"pt-2"} onMouseEnter={()=>setSelectedId("Brother")} >
-        <StaticImage src="../../images/marcas/Brother.png" alt="A kitten" />
-      </motion.div>
-      <motion.div className={"pt-2"} onMouseEnter={()=>setSelectedId("Lenovo")} >
-        <StaticImage src="../../images/marcas/Lenovo.png" alt="A kitten" />
-      </motion.div>
-      <motion.div className={"pt-2"} onMouseEnter={()=>setSelectedId("Microsoft")} >
-        <StaticImage src="../../images/marcas/Microsoft.png" alt="A kitten" />
-      </motion.div>
-      <motion.div className={"w-28 pt-2"} onMouseEnter={()=>setSelectedId("Samsung")} >
-        <StaticImage className={"object-cover"} src="../../images/marcas/Samsung.png" alt="A kitten" />
-      </motion.div>
-    </div>
-    <AnimatePresence>
-      {selectedId  && (
-        <motion.div
-          animate={{ width: "100%"}}
-          transition={{ duration: 0.5 }}
-          layoutId={selectedId} className={"text-lightgrey border rounded border-primary h-56  w-auto my-4 flex flex-col items-center"}>
-          <motion.h2>{selectedId}</motion.h2>
-          <motion.p className="text-md">Disponemos de un amplo catalago de la marca {selectedId}</motion.p>
-          <motion.div className="flex flex-row gap-2 ">
-            <div className="w-auto flex flex-row text-primary text-lg ">
-              <div className="w-12 ">
-                <StaticImage src="../../images/components/laptop.png" alt="A kitten" />
-              </div>
-              <p className=" ml h-full flex items-center">Portátiles</p>
-            </div>
-            <div className="w-auto flex flex-row text-primary text-lg ">
-              <div className="w-12 ">
-                <StaticImage src="../../images/components/motherboard.png" alt="A kitten" />
-              </div>
-              <p className=" h-full flex items-center">Placas Base</p>
-            </div>
-            <div className="w-auto flex flex-row text-primary text-lg ">
-              <div className="w-12 ">
-                <StaticImage src="../../images/components/power-supply.png" alt="A kitten" />
-              </div>
-              <p className=" h-full flex items-center">Fuentes de Alimentación</p>
-            </div>
-          </motion.div>
-          <motion.button className=" border border-primary rounded w-20  mb-6" onClick={()=>setSelectedId(null)}>Cerrar</motion.button>
-        </motion.div>
-      )}
-    </AnimatePresence>
+
+    <Slider {...settings} className={"text-white invisible lg:visible md:w-2/3 mt-6 flex flex-row justify-between"}>
+        <div>
+          <AsusDistributor/>
+        </div>
+        <div>
+            <BrotherDistributor/>
+        </div>
+        <div>
+            <LenovoDistributor/>
+        </div>
+        <div>
+            <MicrosoftDistributor/>
+        </div>
+        <div>
+            <SamsungDistributor/>
+        </div>
+
+    </Slider>
   </div>
 }
 

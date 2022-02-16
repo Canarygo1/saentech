@@ -64,9 +64,14 @@ const Contacto = () => {
             </button>
           </form>
         </div>
-        <div className={"flex flex-col items-center lg:w-1/3"}>
+        <div className={"flex ml-8 flex-col items-center lg:w-1/3"}>
           <div>
+
           <p className={"text-white text-lg "}>Datos contacto</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112288.03699021401!2d-16.377287720193138!3d28.419221981283595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cd3cf17975ad%3A0xc490929bf6b266a5!2sSAEN%20TECH%20CANARIAS%20S.L.!5e0!3m2!1ses!2ses!4v1643285501158!5m2!1ses!2ses"
+              width="400" height="300" style={{ border: 0 }}
+              allowFullScreen="" loading="lazy"></iframe>
           <p className={"text-white"}>Calle Tijarafe, 23 <br/>
             Polígono Industrial Los Majuelos<br/>
             La Laguna<br/>

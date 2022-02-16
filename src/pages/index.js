@@ -9,7 +9,7 @@ import ThirdSection from "../components/sections/third-section"
 import FifthSection from "../components/sections/fifth-section"
 import { useEffect } from "react"
 import app from 'gatsby-plugin-firebase-v9.0'
-import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { Helmet } from "react-helmet"
 
 
 const IndexPage = () => {
@@ -17,7 +17,10 @@ const IndexPage = () => {
 useEffect(()=>{
 
 })
-  return <Layout>
+  return (
+
+
+    <Layout>
     <Seo title="Home" />
     <Separator dataHeigth="100px" dataWidth="1px" />
     <FirstSection />
@@ -29,6 +32,7 @@ useEffect(()=>{
     <FifthSection />
     <Separator dataHeigth="80px" dataWidth="1px" />
   </Layout>
+      )
 }
 
 export default IndexPage

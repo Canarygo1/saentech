@@ -55,13 +55,12 @@ const IndexPage = () => {
             <Link to={"https://fliphtml5.com/check/xtwce/svie/#p=1"}  target="_blank"
                   className="mb-6 mt-8 bg-primary text-white text-center font-bold py-2 mx-3 rounded-xl focus:outline-none focus:shadow-outline"
               type="button">
-              Catalogo
+              Catálogo
             </Link>
           </div>
         </div>
       </div>
     </div>
-
   </Layout>
 }
 
