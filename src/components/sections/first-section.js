@@ -88,7 +88,7 @@ const FirstSection = () => {
           </div>
         </div>
       </div>
-        <div className="border-2 border-primary  rounded-full   xl:hidden justify-center flex fixed bottom-4 text-black w-1/3 h-14 xl:hidden flex flex-row">
+        <div className="border-2 border-primary rounded-full xl:hidden justify-center flex fixed bottom-4 text-black w-60 h-14 xl:hidden flex flex-row">
           <a href="https://goo.gl/maps/ascJ6JSLR8sDrFef6" className="h-full w-1/2 bg-primary border-l-2 rounded-l-full border-primary flex items-center justify-center">
             <StaticImage
               src="./../../images/pin.png"
@@ -98,7 +98,7 @@ const FirstSection = () => {
               alt="A logo"
             />
           </a>
-          <a href="tel:+34922616266"  className="h-full w-1/2  border-l-2 rounded-r-full border-primary flex items-center justify-center bg-black">
+          <a href="tel:+34922616266"  className="h-full w-1/2 border-l-2 rounded-r-full border-primary flex items-center justify-center bg-black">
             <StaticImage
               src="./../../images/phone-call.png"
               width={24}
@@ -107,10 +107,8 @@ const FirstSection = () => {
               alt="A logo"
             />
           </a>
-
       </div>
     </div>
-
     <Slider {...settings} className={"text-white invisible lg:visible md:w-2/3 mt-6 flex flex-row justify-between"}>
         <div>
           <AsusDistributor/>

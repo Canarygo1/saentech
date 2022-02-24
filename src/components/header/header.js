@@ -72,8 +72,38 @@ export default function Header() {
         </div>
 
         <div className="hidden md:flex items-center">
+          <div className={"flex flex-row mr-5"}>
+            <Link to={"https://www.instagram.com/saen.tech"} target="_self" className={"px-3"}>
+              <StaticImage
+                src="./../../images/instagram-logo.png"
+                width={30}
+                quality={100}
+                formats={["auto", "webp", "avif"]}
+                alt="A logo"
+              />
+            </Link>
+            <Link to={"https://twitter.com/saentech_can"} target="_self" className={"px-3"}>
+              <StaticImage
+                src="./../../images/twitter-sign.png"
+                width={30}
+                quality={100}
+                formats={["auto", "webp", "avif"]}
+                alt="A logo"
+              />
+            </Link>
+            <Link to={"https://www.facebook.com/saentech"} target="_self" className={"px-3"}>
+              <StaticImage
+                src="./../../images/facebook.png"
+                width={30}
+                quality={100}
+                formats={["auto", "webp", "avif"]}
+                alt="A logo"
+              />
+            </Link>
+          </div>
           <div className="border-2 border-primary rounded-full text-black w-24 h-10 flex flex-row">
-            <a href="https://goo.gl/maps/ascJ6JSLR8sDrFef6" className="h-full w-1/2 bg-primary border-l-2 rounded-l-full border-primary flex items-center justify-center">
+            <a href="https://goo.gl/maps/ascJ6JSLR8sDrFef6"
+               className="h-full w-1/2 bg-primary border-l-2 rounded-l-full border-primary flex items-center justify-center">
               <StaticImage
                 src="./../../images/pin.png"
                 width={24}
@@ -82,7 +112,8 @@ export default function Header() {
                 alt="A logo"
               />
             </a>
-            <a href="tel:+34922616266"  className="h-full w-1/2  border-l-2 rounded-r-full border-primary flex items-center justify-center">
+            <a href="tel:+34922616266"
+               className="h-full w-1/2  border-l-2 rounded-r-full border-primary flex items-center justify-center">
               <StaticImage
                 src="./../../images/phone-call.png"
                 width={24}
@@ -92,7 +123,6 @@ export default function Header() {
               />
             </a>
           </div>
-
           <Link to={"http://pedidos.saentech.com/ogonlineapp/login/"} target="_blank"
                 className="bg-transparent border-2 border-solid border-primary rounded-full h-10 pt-1 px-4 mx-2">
             Acceso Clientes
