@@ -1,17 +1,18 @@
 import React, { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 function AsusDistributor() {
   const [selectedId, setSelectedId] = useState(false)
   const link = '../../images/fotos_marca/asus-logo.png'
   return (
+
     <motion.div className={"pt-2 flex flex-col items-center"}
                 onHoverStart={()=>setSelectedId(true)} onHoverEnd={()=>setSelectedId(false)} >
-
-      <div className={"w-32 "}>
-        <StaticImage src={link}   alt={""}/>
-      </div>
+      <Link to={"https://www.asus.com/"} target="_blank">
+        <StaticImage className={"w-32 h-12 "} objectFit={"contain"} src={link}   alt={""}/>
+      </Link>
       <div className={"w-auto h-auto"}>
         <AnimatePresence>
           {selectedId  && (
@@ -30,7 +31,7 @@ function AsusDistributor() {
                 </motion.div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/monitor.png" alt="A kitten" />
+                    <StaticImage src="../../images/icons-distributors/monitor.png../../images/icons-distributors/monitor.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Monitores</p>
                 </div>

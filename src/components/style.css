@@ -1,7 +1,15 @@
 .cmp-carousel{
   z-index: -20;
 }
+.slick-dots li.slick-active button:before {
+  color:white !important;
+}
+.slick-dots li button:before {
+  color:white !important;
+}
+.test2{
 
+}
 .first-section{
   background-image: url("./../images/cohete.png");
   background-position: center;

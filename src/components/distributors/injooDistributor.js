@@ -3,13 +3,14 @@ import { AnimatePresence, motion } from "framer-motion"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
-function BrotherDistributor() {
+function InjooDistributor() {
   const [selectedId, setSelectedId] = useState(false)
-  const link = '../../images/fotos_marca/brother-logo.png'
+  const link = '../../images/injoo.png'
+
   return (
     <motion.div className={"pt-2 flex flex-col items-center"}
                 onHoverStart={()=>setSelectedId(true)} onHoverEnd={()=>setSelectedId(false)} >
-      <Link to={"https://www.brother.es/"} target="_blank">
+      <Link to={"https://innjoo.es/"} target="_blank">
         <StaticImage className={"w-32 h-12 "} objectFit={"contain"} src={link}   alt={""}/>
       </Link>
       <div className={"w-auto h-auto"}>
@@ -24,9 +25,16 @@ function BrotherDistributor() {
                 <motion.div
                   className="w-auto flex flex-col items-center justify-self-center text-primary text-sm ">
                   <div className="w-12 " >
-                    <StaticImage src="../../images/icons-distributors/printer.png" alt="A kitten" />
+                    <StaticImage src="../../images/icons-distributors/tablet.png" alt="A kitten" />
                   </div>
-                  <p className=" ml h-full flex items-center">Impresoras y Scanners</p>
+                  <p className=" ml h-full flex items-center">Tablets</p>
+                </motion.div>
+                <motion.div
+                  className="w-auto flex flex-col items-center justify-self-center text-primary text-sm ">
+                  <div className="w-12 " >
+                    <StaticImage src="../../images/icons-distributors/keyboard.png" alt="A kitten" />
+                  </div>
+                  <p className=" ml h-full flex items-center">Periféricos</p>
                 </motion.div>
               </motion.div>
             </motion.div>
@@ -36,4 +44,5 @@ function BrotherDistributor() {
     </motion.div>  )
 }
 
-export default BrotherDistributor;
+export default InjooDistributor
+

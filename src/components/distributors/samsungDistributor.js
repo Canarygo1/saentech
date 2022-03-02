@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 function SamsungDistributor() {
   const [selectedId, setSelectedId] = useState(false)
@@ -9,9 +10,9 @@ function SamsungDistributor() {
   return (
     <motion.div className={"pt-2 flex flex-col items-center"}
                 onHoverStart={()=>setSelectedId(true)} onHoverEnd={()=>setSelectedId(false)} >
-      <div className={"w-32 "}>
-        <StaticImage src={link}   alt={""}/>
-      </div>
+      <Link to={"https://www.samsung.com/es/"} target="_blank">
+        <StaticImage className={"w-32 h-12 "} objectFit={"contain"} src={link}   alt={""}/>
+      </Link>
       <div className={"w-auto h-auto"}>
         <AnimatePresence>
           {selectedId  && (

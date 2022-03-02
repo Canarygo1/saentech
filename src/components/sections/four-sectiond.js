@@ -44,8 +44,7 @@ const FourSection = () => (
               formats={["auto", "webp", "avif"]}
               alt="A logo"
             />
-            <span className='text-2xl mt-6'>Happy User</span>
-            <span className='text-xl mt-2'>tempy.club</span>
+
           </div>
       </div>
   </div>

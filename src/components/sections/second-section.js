@@ -23,11 +23,11 @@ const SecondSection = () => (
           <div className="icon-background icono-soporte">
           </div>
           <div className="flex flex-col items-start">
-            <span className="text-2xl">Soporte a tu dispocición</span>
+            <span className="text-2xl">Soporte a tu disposición</span>
             <div className='text-xl flex flex-col items-start mt-9 text-left'>
               <span>Ofrecemos ayuda y soporte en</span>
               <span>tiempo real a nuestros clientes vía</span>
-              <span>chat. Horario de 9:00 a 18:00.</span>
+              <span>chat. Horario de 8:30 a 18:00.</span>
             </div>
           </div>
         </div>
@@ -35,11 +35,11 @@ const SecondSection = () => (
           <div className="icon-background icono-envios">
           </div>
           <div className="flex flex-col items-start">
-            <span className="text-2xl">Envios rapidos</span>
+            <span className="text-2xl">Envíos rápidos</span>
             <div className='text-xl flex flex-col items-start mt-9 text-left'>
-              <span>Tendras tus productos en tu negocio</span>
+              <span>Tendrás tus productos en tu negocio</span>
               <span>al dia siguiente de hacer tu pedido,</span>
-              <span>de forma rapida y segura.</span>
+              <span>de forma rápida y segura.</span>
             </div>
           </div>
         </div>

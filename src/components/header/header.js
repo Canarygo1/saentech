@@ -36,7 +36,7 @@ export default function Header() {
         <Link to={"/"}>
           <StaticImage
             src="./../../images/logo.png"
-            width={63}
+            width={80}
             quality={100}
             formats={["auto", "webp", "avif"]}
             alt="A logo"
@@ -49,12 +49,12 @@ export default function Header() {
           </span></Link>
           <Link to={"/#third"}>
           <span className="text-lg mx-6 ">
-        Conocenos
+        Conócenos
       </span>
           </Link>
           <Link to="/catalogo">
           <span className="text-lg mx-6">
-        Catalogo
+        Catálogo
       </span>
           </Link>
           <Link to="/saentech-pro">

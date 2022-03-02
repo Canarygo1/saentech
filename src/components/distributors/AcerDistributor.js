@@ -3,14 +3,14 @@ import { AnimatePresence, motion } from "framer-motion"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
-function LenovoDistributor() {
+function AcerDistributor() {
   const [selectedId, setSelectedId] = useState(false)
-  const link = '../../images/fotos_marca/lenovo-logo.png'
-
+  const link = '../../images/fotos_marca/acer-logo-1.png'
   return (
+
     <motion.div className={"pt-2 flex flex-col items-center"}
                 onHoverStart={()=>setSelectedId(true)} onHoverEnd={()=>setSelectedId(false)} >
-      <Link to={"https://www.lenovo.com/es/es/"} target="_blank">
+      <Link to={"https://store.acer.com/es-es/"} target="_blank">
         <StaticImage className={"w-32 h-12 "} objectFit={"contain"} src={link}   alt={""}/>
       </Link>
 
@@ -32,28 +32,30 @@ function LenovoDistributor() {
                 </motion.div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
+                    <StaticImage src="../../images/icons-distributors/monitor.png" alt="A kitten" />
+                  </div>
+                  <p className=" h-full flex items-center">Monitores</p>
+                </div>
+                <div className="w-auto flex flex-col items-center text-primary text-sm ">
+                  <div className="w-12 ">
                     <StaticImage src="../../images/icons-distributors/computer-desktop.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Ordenadores</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/tablet.png" alt="A kitten" />
+                    <StaticImage src="../../images/icons-distributors/proyector.png" alt="A kitten" />
                   </div>
-                  <p className=" h-full flex items-center">Tablets</p>
-                </div>
-                <div className="w-auto flex flex-col items-center text-primary text-sm ">
-                  <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/smartWatch.png" alt="A kitten" />
-                  </div>
-                  <p className=" h-full flex items-center">SmartWatch</p>
+                  <p className=" h-full flex items-center">Proyectores</p>
                 </div>
               </motion.div>
             </motion.div>
           )}
         </AnimatePresence>
       </div>
-    </motion.div>  )
+
+    </motion.div>
+      )
 }
 
-export default LenovoDistributor
+export default AcerDistributor

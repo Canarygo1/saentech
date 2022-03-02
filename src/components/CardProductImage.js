@@ -3,7 +3,7 @@ import React from "react"
 function CardProductImage({ url, name="" ,onClick=()=>{}}) {
   console.log(url)
   return (
-    <div className="flex flex-col justify-end shadow-lg items-center bg-white card" onClick={()=>onClick()}>
+    <button className="flex flex-col justify-end shadow-lg items-center bg-white card" onClick={()=>onClick()}>
     <div className=" w-52 h-52 bg-secondary mt-6  " style={{
       backgroundColor:'white',
       backgroundPosition: 'center',
@@ -18,7 +18,7 @@ function CardProductImage({ url, name="" ,onClick=()=>{}}) {
       </div>
       }
 
-    </div>
+    </button>
   )
 }
 

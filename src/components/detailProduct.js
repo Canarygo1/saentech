@@ -29,7 +29,7 @@ function DetailProduct({ product, onClose}) {
       <div className=" h-1/3 lg:w-1/2 lg:h-1/2 lg:h-full  flex flex-col items-center justify-center">
         <div className="h-2/3 text-md lg:flex lg:flex-col lg:justify-end">
           <p className="m-0 p-0 text-center">¿Quieres más información?</p>
-          <p className="m-0 p-0 text-center">Facilitanos tus datos y nos pondremos encontanto contigo</p>
+          <p className="m-0 p-0 text-center">Facilitanos tus datos y nos pondremos en contacto contigo</p>
           <form>
             <Textfield id={"email"} placeholder={"Email"} label={"Email"} htmlFor={"email"}></Textfield>
           </form>

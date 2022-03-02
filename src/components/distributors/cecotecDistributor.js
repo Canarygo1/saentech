@@ -3,15 +3,17 @@ import { AnimatePresence, motion } from "framer-motion"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
-function BrotherDistributor() {
+function CecotecDistributor() {
   const [selectedId, setSelectedId] = useState(false)
-  const link = '../../images/fotos_marca/brother-logo.png'
+  const link = '../../images/fotos_marca/cecotec-logo.png'
+
   return (
     <motion.div className={"pt-2 flex flex-col items-center"}
                 onHoverStart={()=>setSelectedId(true)} onHoverEnd={()=>setSelectedId(false)} >
-      <Link to={"https://www.brother.es/"} target="_blank">
+      <Link to={"https://www.storececotec.com/es/"} target="_blank">
         <StaticImage className={"w-32 h-12 "} objectFit={"contain"} src={link}   alt={""}/>
       </Link>
+
       <div className={"w-auto h-auto"}>
         <AnimatePresence>
           {selectedId  && (
@@ -24,10 +26,16 @@ function BrotherDistributor() {
                 <motion.div
                   className="w-auto flex flex-col items-center justify-self-center text-primary text-sm ">
                   <div className="w-12 " >
-                    <StaticImage src="../../images/icons-distributors/printer.png" alt="A kitten" />
+                    <StaticImage src="../../images/icons-distributors/running.png" alt="A kitten" />
                   </div>
-                  <p className=" ml h-full flex items-center">Impresoras y Scanners</p>
+                  <p className=" ml h-full flex items-center">Deporte</p>
                 </motion.div>
+                <div className="w-auto flex flex-col items-center text-primary text-sm ">
+                  <div className="w-12 ">
+                    <StaticImage src="../../images/icons-distributors/electric-appliance.png" alt="A kitten" />
+                  </div>
+                  <p className=" h-full flex items-center">Electrodomésticos</p>
+                </div>
               </motion.div>
             </motion.div>
           )}
@@ -36,4 +44,4 @@ function BrotherDistributor() {
     </motion.div>  )
 }
 
-export default BrotherDistributor;
+export default CecotecDistributor

@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Saentech Canarias - Saentech Canarias`,
+    description: `¿Por qué Confiar en Saen Tech Canarias? Saen Tech es el resultado de la suma de mucha experiencia, gran profesionalidad, sacrifcio, constancia y ...`,
+    author: `@alecruzdev`,
+    siteUrl: `https://www.saentech.com`,
   },
   plugins: [
     'gatsby-plugin-postcss',
@@ -43,7 +43,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/saentech.jpeg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
