@@ -42,7 +42,7 @@ const ThirdSection = () => {
       console.log("Test")
       let localproductos = []
       const db = getFirestore(app)
-      let randomArrayForQuery = randomArray(14, 99)
+      let randomArrayForQuery = randomArray(19, 99)
       console.log(randomArrayForQuery)
       for (let i = 0; i < randomArrayForQuery.length; i++) {
         const docRef = doc(db, "productos", randomArrayForQuery[i].toString())
@@ -99,7 +99,7 @@ const ThirdSection = () => {
         </div>
         <div>
         </div>
-        <div className="flex flex-wrap lg:ml-4 mt-4 items-center section-products justify-center gap-4">
+        <div className="flex flex-wrap lg:ml-4 mt-4 items-center section-products justify-center gap-4 mx-2">
           <CardProductImage url={products.length === 0 ? "" : products[1].Url}
                             name={products.length === 0 ? "" : products[1].NombreCorto}
                             onClick={products.length === 0 ? () => {
@@ -164,6 +164,31 @@ const ThirdSection = () => {
                             name={products.length === 0 ? "" : products[13].NombreCorto}
                             onClick={products.length === 0 ? () => {
                             } : () => openDetail(products[13])}
+          />
+          <CardProductImage url={products.length === 0 ? "" : products[14].Url}
+                            name={products.length === 0 ? "" : products[14].NombreCorto}
+                            onClick={products.length === 0 ? () => {
+                            } : () => openDetail(products[14])}
+          />
+          <CardProductImage url={products.length === 0 ? "" : products[15].Url}
+                            name={products.length === 0 ? "" : products[15].NombreCorto}
+                            onClick={products.length === 0 ? () => {
+                            } : () => openDetail(products[15])}
+          />
+          <CardProductImage url={products.length === 0 ? "" : products[16].Url}
+                            name={products.length === 0 ? "" : products[16].NombreCorto}
+                            onClick={products.length === 0 ? () => {
+                            } : () => openDetail(products[16])}
+          />
+          <CardProductImage url={products.length === 0 ? "" : products[17].Url}
+                            name={products.length === 0 ? "" : products[17].NombreCorto}
+                            onClick={products.length === 0 ? () => {
+                            } : () => openDetail(products[17])}
+          />
+          <CardProductImage url={products.length === 0 ? "" : products[18].Url}
+                            name={products.length === 0 ? "" : products[18].NombreCorto}
+                            onClick={products.length === 0 ? () => {
+                            } : () => openDetail(products[18])}
           />
         </div>
       </div>

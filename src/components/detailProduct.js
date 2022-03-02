@@ -4,7 +4,6 @@ import Modal from 'react-modal';
 import CardProductImage from "./CardProductImage"
 
 function DetailProduct({ product, onClose}) {
- console.log(product)
   return (
     <Modal
       overlayClassName="Overlay"

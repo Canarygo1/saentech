@@ -4,9 +4,8 @@ function CardProductImage({
                             url, name = "", onClick = () => {
   }
                           }) {
-  console.log(url)
   return (
-    <div className="flex flex-col justify-end shadow-lg items-center bg-white card" onClick={() => onClick()}>
+    <div className="flex flex-col justify-end shadow-lg items-center bg-white card px-2" onClick={() => onClick()}>
       <div className="w-full h-52 bg-secondary mt-6  " style={{
         backgroundColor: "white",
         backgroundPosition: "center",
