@@ -1,12 +1,12 @@
 import React from "react"
 
 function CardProductImage({
-                            url, name = "", onClick = () => {
+                            url, name = "", classValue="card", onClick = () => {
   }
                           }) {
   return (
-    <div className="flex flex-col justify-end shadow-lg items-center bg-white card px-2" onClick={() => onClick()}>
-      <div className="w-full h-52 bg-secondary mt-6  " style={{
+    <div className={`flex flex-col justify-end shadow-lg items-center bg-white px-2 ${classValue}`} onClick={() => onClick()}>
+      <div className="w-full h-52 bg-secondary mt-6 " style={{
         backgroundColor: "white",
         backgroundPosition: "center",
         backgroundSize: "contain",
