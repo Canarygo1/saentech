@@ -16,12 +16,13 @@ console.log(imgUrls)
 export const getAllCatalogos = async () =>{
   const { data } = await axios.get('https://strapi-saentech-xsn8m.ondigitalocean.app/api/catalogos?populate=*')
   let parseResponse = [];
+  console.log(data)
   for (let i =0;i<data.data.length;i++){
     parseResponse.push({
       logo:data.data[i].attributes.logo.data.attributes.url,
       link:data.data[i].attributes.Link,
       web:data.data[i].attributes.Web,
-      archivo:data.data[i].attributes.Archivo.data&&data.data[i].attributes.Archivo.data.attributes.url,
+      archivo:data.data[i].attributes.Archivo.data&&data.data[i].attributes.Archivo.data[0].attributes.url,
     })
   }
 
