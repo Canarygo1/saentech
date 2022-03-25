@@ -4,7 +4,6 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import * as React from "react"
 import Separator from "../separator"
 import { StaticImage } from "gatsby-plugin-image"
-import { Carousel } from "react-responsive-carousel"
 import { useEffect, useState } from "react"
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
 import { doc, getDoc,getFirestore } from "firebase/firestore";
@@ -38,6 +37,7 @@ import Toshibaistributor from "../distributors/toshibaDistributor"
 import TpLinkDistributor from "../distributors/Tp-Link"
 import XiaomiDistributor from "../distributors/xiaomiDistributor"
 import CarrouselSlider from "../carrouselSlider"
+import { getAllCarrouselImages } from "../../api/api"
 
 
 
@@ -76,24 +76,18 @@ const FirstSection = () => {
   }
 
   useEffect(async () => {
-
     async function getImages() {
-      const db = getFirestore(app);
-      const docRef = doc(db, "galeria", "imagenes");
-      const docSnap = await getDoc(docRef);
-      let imgName = shuffle(docSnap.data().url);
+    let imgUrl = await getAllCarrouselImages();
 
-      for (let i = 0; i < imgName.length; i++) {
-        const storage = getStorage();
-        const starsRef = await ref(storage, imgName[i]);
-        const url = await getDownloadURL(starsRef)
-        images2.push(
-            <img src={url} alt="A kitten" className={"h-44 max-h-44 xl:h-64 xl:max-h-64 md:h-auto object-contain"}/>
-        );
-      }
-      setImages(images2)
+    for (let i =0;i< imgUrl.length;i++){
+          images2.push(
+              <img src={imgUrl[i]} alt="A kitten" className={"h-44 max-h-44 xl:h-64 xl:max-h-64 md:h-auto object-contain"}/>
+          );
+
     }
-
+    setImages(images2)
+    }
+    
     getImages()
 
   },[])
@@ -106,9 +100,9 @@ const FirstSection = () => {
     <Separator dataHeigth="100px" dataWidth="1px" />
     <div
       className="first-section w-full  flex items-end xl:items-start justify-center xl:justify-start h-100 xl:h-110">
-      <div className="w-auto flex flex-col content-first-section fit-content hidden xl:flex">
+      <div className="w-auto flex flex-col content-first-section text-white fit-content hidden xl:flex">
         <Separator dataHeigth="270px" dataWidth="1px" />
-        <span className="my-2">
+        <span className="my-2 ">
         Lanza tu negocio con los
       </span>
         <span className="my-4">

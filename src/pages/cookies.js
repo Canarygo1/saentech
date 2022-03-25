@@ -1,10 +1,7 @@
 import * as React from "react"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { useEffect } from "react"
-import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "../../.cache/gatsby-browser-entry"
 
 
 const IndexPage = () => {

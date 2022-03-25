@@ -18,7 +18,7 @@ function DetailProduct({ product, onClose}) {
       </div>
       <div className={"flex flex-col lg:flex-row h-full justify-center"}>
         <div className=" h-2/3 lg:w-1/2 lg:h-full flex  lg:text-center lg:justify-center flex-col items-center">
-          <CardProductImage  url={product.Imagen} classValue={"card-detail"} />
+          <CardProductImage  url={product.Url} classValue={"card-detail"} />
           <div className="flex h-1/3 flex-col mt-2">
             <div>
               <p className="text-md m-0 p-0 font-bold">Nombre Producto</p>

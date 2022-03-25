@@ -14,21 +14,17 @@ const ThirdSection = () => {
   function randomArray(length) {
     const n = length
 
-// Initial empty array
     const arr = []
 
-// Null check
     if (n == 0) {
       console.log(null)
     }
 
     do {
-      // Generating random number
+
       const randomNumber = Math
         .floor(Math.random() * 99) + 1
 
-      // Pushing into the array only
-      // if the array does not contain it
       if (!arr.includes(randomNumber)) {
         arr.push(randomNumber)
       }

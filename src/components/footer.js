@@ -6,8 +6,7 @@ const Footer = () => (
     <span>Copyright © 2022 Saentech</span>
     <div className='flex flex-col w-full items-center md:items-start w-1/5'>
       <Link to="/policy"><span>Política de Privacidad</span></Link>
-      <Link to="/cookies"><span>Términos de uso</span></Link>
-      <span>GDPR</span>
+      <Link to="/cookies"><span>Política de Cookies</span></Link>
 
     </div>
   </div>
