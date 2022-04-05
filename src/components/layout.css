@@ -597,4 +597,29 @@ pre tt:after {
     font-size: 100%;
   }
 }
+.dot{
+  position: relative;
+  background-color: black;
+  width: 56px;
+  height: 52px;
+  border-radius: 30px;
+}
 
+.dotLeft{
+  left: -45px;
+}
+
+.dotRight{
+  right: -45px;
+}
+
+.ticket{
+  min-height: 427px;
+}
+
+.textAccordion{
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: height 1s ease 0s;
+}

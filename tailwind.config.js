@@ -4,6 +4,9 @@ module.exports = {
   theme: {
 
     extend: {
+      lineHeight: {
+        '11': '60px',
+      },
       height: {
         '100': '40rem',
         '110': '64rem',
@@ -18,7 +21,10 @@ module.exports = {
         'xl': '1280px',
         '2xl': '1536px',
       },
-
+      gradientColorStops: theme => ({
+        'primary': '#FFFFFF33',
+        'secondary': '#FFFFFF00',
+      }),
     },
     colors: {
       black: '#000000',
@@ -31,7 +37,8 @@ module.exports = {
       darkGreen: '#3A8484',
       lightGreen: '#49A280',
       blackFont: '#555555',
-      error:'#F44336'
+      error:'#F44336',
+      ticket: '#343434'
     },
     fontFamily:{
       'display': ['Roboto'],
@@ -45,7 +52,9 @@ module.exports = {
       '1xl': '20px',
       '2xl': '22px',
       '3xl': '32px',
-      '7xl': '48px'
+      '4xl': '40px',
+      '7xl': '48px',
+      '8xl': '56px'
     }
   },
   variants: {
