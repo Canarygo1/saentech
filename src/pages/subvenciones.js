@@ -14,16 +14,16 @@ const SubvencionesPage = () => {
 
   return <Layout>
     <Seo title="Subvenciones" />
-    <div className={"mx-10 mt-28 md:mt-0 leading-11 min-h-screen"}>
-      <div className={"flex w-full items-center"}>
-        <div className={"w-1/2 flex flex-col gap-7 items-center"}>
+    <div className={"xl:mx-10 mx-2 mt-28 md:mt-0 leading-11 min-h-screen"}>
+      <div className={"flex xl:flex-row flex-col w-full items-center flex-wrap"}>
+        <div className={"xl:w-1/2 w-full flex mb-16 xl:mb-0 flex-col gap-7 items-center"}>
           <span className="text-8xl text-white text-center">Consigue hasta 12000€ de subvención para empresas y autónomos ¡YA!</span>
-          <div className={"px-16 py-1 border-2 border-solid border-primary rounded-md"}>
+          <div className={"xl:px-16 xl:py-1 border-2 text-center border-solid border-primary rounded-md w-full xl:w-auto"}>
             <span className={"text-primary font-bold"}>Hasta 12000€</span>
           </div>
         </div>
-        <div className={"w-1/2 flex justify-center"}>
-          <div className={"p-4 flex flex-col w-3/5 rounded-xl bg-gradient-to-bl from-primary to-transparent"}>
+        <div className={"xl:w-1/2 w-full flex justify-center"}>
+          <div className={"p-4 flex flex-col w-4/5 rounded-xl bg-gradient-to-bl from-primary to-transparent"}>
             <span className="text-3xl text-white text-center">Despeguemos juntos</span>
             <label htmlFor="nombre" className={"text-white"}>Nombre</label>
             <input className={"rounded-md px-2"} type="text" id="nombre" name="nombre" />
@@ -54,15 +54,22 @@ const SubvencionesPage = () => {
           </div>
         </div>
       </div>
-      <div className={"flex justify-center"}>
-        <p className={"text-4xl text-white"}><span className={"text-primary font-bold"}>Subvención </span>acelera Pyme
+      <div className={"bgCohete hidden xl:block"}/>
+      <div className={"bgPromo hidden xl:block"}/>
+      <div className={"flex flex-col items-center my-16"}>
+        <p className={"text-4xl text-white mb-5 text-center"}><span className={"text-primary font-bold"}>Subvención </span>acelera Pyme
           kit Digital.</p>
+        <div className={"flex flex-col xl:flex-row justify-center w-full xl:w-2/3 xl:px-32"}>
+          <img className={"h-20 xl:w-auto w-full"} src={require('./../images/marcas/Promo1.png').default} alt={"promo1"}/>
+          <img className={"h-20 xl:w-auto w-full"} src={require('./../images/marcas/Promo2.png').default} alt={"promo2"}/>
+        </div>
       </div>
+      <div className={"robot xl:block hidden"}/>
       <div className={"flex flex-col items-center w-full"}>
-        <p className={"text-3xl text-white"}>No pierdas <span
+        <p className={"text-3xl text-white mb-16 text-center"}>No pierdas <span
           className={"text-primary font-bold"}>la mejor oportunidad </span>para digitalizar tu negocio.</p>
-        <div className={"flex w-full justify-between gap-36"}>
-          <div className={"w-1/3 text-center bg-ticket rounded-lg ticket"}>
+        <div className={"flex mx-30 xl:mx-0 flex-col xl:flex-row w-full items-center xl:justify-between gap-20 xl:gap-36"}>
+          <div className={"text-center bg-ticket rounded-lg ticket"}>
             <div className={"pt-4 px-4"}>
               <span className={"text-white text-2xl font-bold"}>Segmento 1</span>
               <p className={"text-white text-1xl"}>Entre <span className={"font-bold"}>10</span> y <span
@@ -89,7 +96,7 @@ const SubvencionesPage = () => {
               </div>
             </div>
           </div>
-          <div className={"w-1/3 text-center bg-ticket rounded-lg ticket"}>
+          <div className={"text-center bg-ticket rounded-lg ticket"}>
             <div className={"pt-4 px-4"}>
               <span className={"text-white text-2xl font-bold"}>Segmento 2</span>
               <p className={"text-white text-1xl"}>Entre <span className={"font-bold"}>2</span> y <span
@@ -116,7 +123,7 @@ const SubvencionesPage = () => {
               </div>
             </div>
           </div>
-          <div className={"w-1/3 text-center bg-ticket rounded-lg ticket"}>
+          <div className={"text-center bg-ticket rounded-lg ticket"}>
             <div className={"pt-4 px-4"}>
               <span className={"text-white text-2xl font-bold"}>Segmento 1</span>
               <p className={"text-white text-1xl"}>Entre <span className={"font-bold"}>1</span> y <span

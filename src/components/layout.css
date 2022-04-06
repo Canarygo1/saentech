@@ -614,6 +614,7 @@ pre tt:after {
 }
 
 .ticket{
+  width: 90%;
   min-height: 427px;
 }
 
@@ -622,4 +623,44 @@ pre tt:after {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   transition: height 1s ease 0s;
+}
+
+@media (min-width: 767px) {
+  .ticket{
+    width: 33%;
+  }
+}
+
+.robot {
+  position: absolute;
+  z-index: -1;
+  left: -30px;
+  align-self: start;
+  background-image: url("./../images/Robot.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 310px;
+  min-width: 128px;
+}
+
+.bgCohete {
+  position: absolute;
+  background-image: url("./../images/CoheteBasico.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 700px;
+  width: 80%;
+  top: 66%;
+}
+
+.bgPromo{
+  align-self: start;
+  background-image: url("./../images/backgroundPromo.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  min-width: 100%;
 }
