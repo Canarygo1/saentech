@@ -52,7 +52,7 @@ export default function Header() {
         Conócenos
       </span>
           </Link>
-          <Link to="/subvenciones">
+          <Link to="/catalogo">
           <span className="text-lg mx-6">
         Catálogo
       </span>
@@ -164,7 +164,7 @@ export default function Header() {
                 className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Inicio</span></Link>
               <Link to="/" className="my-3"><span
                 className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Conocenos</span></Link>
-              <Link to="/subvenciones" className="my-3"><span
+              <Link to="/catalogo" className="my-3"><span
                 className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Catalogos</span></Link>
               <Link to="/saentech-pro" className="my-3"><span
                 className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Saentech Pro</span></Link>

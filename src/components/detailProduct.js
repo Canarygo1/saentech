@@ -22,7 +22,7 @@ function DetailProduct({ product, onClose}) {
           <div className="flex h-1/3 flex-col mt-2">
             <div>
               <p className="text-md m-0 p-0 font-bold">Nombre Producto</p>
-              <p className="text-md m-0 p-0 line-clamp-1">{product.NombreCorto}</p>
+              <p className="text-md m-0 p-0">{product.NombreCorto}</p>
             </div>
             <div>
               <p className="text-md m-0 p-0 font-bold">Código Producto</p>
