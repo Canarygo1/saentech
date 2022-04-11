@@ -22,7 +22,7 @@ const SubvencionesPage = () => {
             <span className={"text-primary font-bold"}>Hasta 12000€</span>
           </div>
         </div>
-        <div className={"xl:w-1/2 w-full flex justify-center"}>
+        <div className={"xl:w-1/2 w-full flex justify-center z-50"}>
           <div className={"p-4 flex flex-col w-4/5 rounded-xl bg-gradient-to-bl from-primary to-transparent"}>
             <span className="text-3xl text-white text-center">Despeguemos juntos</span>
             <label htmlFor="nombre" className={"text-white"}>Nombre</label>
@@ -36,15 +36,15 @@ const SubvencionesPage = () => {
             <span className={"text-white"}>Tamaño empresa</span>
             <div className={"flex justify-between"}>
               <div className={"flex items-center"}>
-                <input type="radio" id="pequena" name="pequena" />
+                <input type="radio" id="pequena" name="type" />
                 <label htmlFor="pequena" className={"text-white text-sm ml-4"}>1 y 2 trabajodres.</label>
               </div>
               <div className={"flex items-center"}>
-                <input type="radio" id="medio" name="medio" />
+                <input type="radio" id="medio" name="type" />
                 <label htmlFor="medio" className={"text-white text-sm ml-4"}>3 y 9 trabajodres.</label>
               </div>
               <div className={"flex items-center"}>
-                <input type="radio" id="grande" name="grande" />
+                <input type="radio" id="grande" name="type" />
                 <label htmlFor="grande" className={"text-white text-sm ml-4"}>10 y 50 trabajodres.</label>
               </div>
             </div>
