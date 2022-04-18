@@ -17,7 +17,6 @@ const Login = () => {
       .then(() => {
         return signInWithEmailAndPassword(auth,"1234@1.com", "123456").then((userCredential)=>{
           if (userCredential.user){
-            console.log(userCredential.user)
             navigate("/app/pro" )
           }
           }
@@ -29,7 +28,6 @@ const Login = () => {
         const errorMessage = error.message;
       });
 
-    console.log(test)
 
   }
 

@@ -25,19 +25,19 @@ function AsusDistributor() {
                 <motion.div
                   className="w-auto flex flex-col items-center justify-self-center text-primary text-sm ">
                   <div className="w-12 " >
-                    <StaticImage src="../../images/components/laptop.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/laptop.png" alt="" />
                   </div>
                   <p className=" ml h-full flex items-center">Portátiles</p>
                 </motion.div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/monitor.png../../images/icons-distributors/monitor.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/monitor.png" alt="" />
                   </div>
                   <p className=" h-full flex items-center">Monitores</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/wifi-router.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/wifi-router.png" alt="" />
                   </div>
                   <p className=" h-full flex items-center">Redes</p>
                 </div>
