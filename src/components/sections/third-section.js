@@ -35,13 +35,13 @@ const ThirdSection = () => {
 
   useEffect(() => {
     async function getXML() {
-      console.log("Test")
-      let localproductos = []
-      const db = getFirestore(app)
+      console.log("Test");
+      let localproductos = [];
+      const db = getFirestore(app);
       let randomArrayForQuery = randomArray(19, 99)
-      console.log(randomArrayForQuery)
+      console.log(randomArrayForQuery);
       for (let i = 0; i < randomArrayForQuery.length; i++) {
-        const docRef = doc(db, "productos", randomArrayForQuery[i].toString())
+        const docRef = doc(db, "productos", randomArrayForQuery[i].toString());
         const docSnap = await getDoc(docRef)
         localproductos.push(docSnap.data())
         console.log(docSnap.data())

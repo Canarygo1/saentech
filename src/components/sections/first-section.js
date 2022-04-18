@@ -52,8 +52,8 @@ const FirstSection = () => {
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 9000,
-    autoplaySpeed: 2000,
+    speed: 4000,
+    autoplaySpeed: 1500,
     // cssEase: "linear"
   };
 
@@ -87,7 +87,7 @@ const FirstSection = () => {
     }
     setImages(images2)
     }
-    
+
     getImages()
 
   },[])
