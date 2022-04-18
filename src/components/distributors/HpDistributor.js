@@ -25,14 +25,14 @@ function HpDistributor() {
                 <motion.div
                   className="w-auto flex flex-col items-center justify-self-center text-primary text-sm ">
                   <div className="w-12 " >
-                    <StaticImage src="../../images/icons-distributors/servers.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/servers.png" alt="A kitten" />
                   </div>
                   <p className=" ml h-full flex items-center">Servidores</p>
                 </motion.div>
                 <motion.div
                   className="w-auto flex flex-col items-center justify-self-center text-primary text-sm ">
                   <div className="w-12 " >
-                    <StaticImage src="../../images/icons-distributors/computer-desktop.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/computer-desktop.png" alt="A kitten" />
                   </div>
                   <p className=" ml h-full flex items-center">Ordenadores</p>
                 </motion.div>
@@ -46,14 +46,14 @@ function HpDistributor() {
                 <motion.div
                   className="w-auto flex flex-col items-center justify-self-center text-primary text-sm ">
                   <div className="w-12 " >
-                    <StaticImage src="../../images/icons-distributors/keyboard.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/keyboard.png" alt="A kitten" />
                   </div>
                   <p className=" ml h-full flex items-center">Periféricos</p>
                 </motion.div>
                 <motion.div
                   className="w-auto flex flex-col items-center justify-self-center text-primary text-sm ">
                   <div className="w-12 " >
-                    <StaticImage src="../../images/icons-distributors/printer.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/printer.png" alt="A kitten" />
                   </div>
                   <p className=" ml h-full flex items-center">Impresoras</p>
                 </motion.div>

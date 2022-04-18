@@ -31,25 +31,25 @@ function AlcatelDistributor() {
                 </motion.div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/smartwatch.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/smartwatch.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Apple Watch</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/computer-desktop.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/computer-desktop.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Macs</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/tablet.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/tablet.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Ipads</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/smartphone.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/smartphone.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Iphone</p>
                 </div>

@@ -25,7 +25,7 @@ function KingstonDistributor() {
                 <motion.div
                   className="w-auto flex flex-col items-center justify-self-center text-primary text-sm ">
                   <div className="w-12 " >
-                    <StaticImage src="../../images/icons-distributors/hard-drive.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/hard-drive.png" alt="A kitten" />
                   </div>
                   <p className=" ml h-full flex items-center">Almacenamiento</p>
                 </motion.div>

@@ -31,19 +31,19 @@ function SamsungDistributor() {
                 </motion.div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/smartwatch.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/smartwatch.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Smartwatch</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/tablet.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/tablet.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Smartphones</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/tablet.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/tablet.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Tablets</p>
                 </div>

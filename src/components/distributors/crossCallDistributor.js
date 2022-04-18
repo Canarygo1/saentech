@@ -24,7 +24,7 @@ function CrossCallDistributor() {
               <motion.div className="grid grid-cols-2 gap-2 wrap">
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/smartphone.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/smartphone.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">SmartPhones</p>
                 </div>
