@@ -12,12 +12,16 @@ import "./layout.css"
 import "./style.css"
 import Footer from "./footer"
 import Header from "./header/header"
+import Circuiteria from "./circuiteria/circuiteria.js"
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main >{children}</main>
+      <main>
+        <Circuiteria/>
+        {children}
+      </main>
       <Footer />
     </>
   )

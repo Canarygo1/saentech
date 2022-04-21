@@ -1,0 +1,58 @@
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill-opacity: 0;
+  }
+  to {
+    fill-opacity: 1;
+  }
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.divAnimation{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.circuit-no-fill,
+.circuits,
+.circuit-top-group {
+  margin: 20px;
+  width: 100px;
+}
+
+.circuit-no-fill {
+  fill: none;
+  stroke: #BDD345;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke-width: 2px;
+  stroke-miterlimit: 10;
+
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-name: dash;
+  animation-timing-function: ease-in-out;
+}
