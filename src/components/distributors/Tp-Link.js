@@ -24,13 +24,13 @@ function TpLinkDistributor() {
 
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/cctv.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/cctv.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Video Vigilancia</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/wifi-router.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/wifi-router.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Networking</p>
                 </div>

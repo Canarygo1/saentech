@@ -32,8 +32,8 @@ export default function Header() {
           Horario de L-J: 08:30 - 18:00 V: 08:30 - 15:00
         </span>
         </div>
-        <div className={"mt-2 rounded-lg bg-primary"}>
-         <span className="text-white text-lg mx-2">
+        <div className={"mt-2 animate-pulse"}>
+         <span className="text-error text-lg mx-2">
           ¡ACCEDE A TU SUBVENCIÓN!
         </span>
         </div>

@@ -32,19 +32,19 @@ function LenovoDistributor() {
                 </motion.div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/computer-desktop.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/computer-desktop.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Ordenadores</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/tablet.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/tablet.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Tablets</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/smartWatch.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/smartWatch.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">SmartWatch</p>
                 </div>

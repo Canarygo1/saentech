@@ -9,7 +9,6 @@ function AdminHeader({ children }) {
     const sidebar = document.querySelector(".sidebar");
       sidebar.classList.toggle("-translate-x-full");
     setOpen(!isOpen);
-    console.log(isOpen)
   }
   return (
     <div className="relative min-h-screen md:flex text-white ">

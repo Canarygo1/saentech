@@ -24,7 +24,6 @@ function Home(props) {
     setImages([]);
     const docSnap = await getDoc(docImages);
     let imgName = docSnap.data().url
-    console.log(imgName);
     for (let i = 0; i < imgName.length; i++) {
       const storage = getStorage(app);
       const starsRef = await ref(storage, imgName[i]);
@@ -40,7 +39,6 @@ function Home(props) {
       return
     }
     try {
-      console.log(file.name)
       await uploadFromBlobAsync({
         blobUrl: file,
         name: file.name,
@@ -50,7 +48,6 @@ function Home(props) {
       });
       await getImages();
     } catch (e) {
-      console.log(e)
     }
   }, [])
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop })
@@ -61,7 +58,6 @@ function Home(props) {
 
     setChanges(true)
     setImages(images.filter(e => e.name !== value))
-    console.log("Borrado" + value)
 
     await updateDoc(docImages, {
       url: arrayRemove(value)

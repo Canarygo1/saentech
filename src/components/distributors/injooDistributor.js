@@ -25,14 +25,14 @@ function InjooDistributor() {
                 <motion.div
                   className="w-auto flex flex-col items-center justify-self-center text-primary text-sm ">
                   <div className="w-12 " >
-                    <StaticImage src="../../images/icons-distributors/tablet.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/tablet.png" alt="A kitten" />
                   </div>
                   <p className=" ml h-full flex items-center">Tablets</p>
                 </motion.div>
                 <motion.div
                   className="w-auto flex flex-col items-center justify-self-center text-primary text-sm ">
                   <div className="w-12 " >
-                    <StaticImage src="../../images/icons-distributors/keyboard.png" alt="A kitten" />
+                    <StaticImage src="../../images/componentskeyboard.png" alt="A kitten" />
                   </div>
                   <p className=" ml h-full flex items-center">Periféricos</p>
                 </motion.div>

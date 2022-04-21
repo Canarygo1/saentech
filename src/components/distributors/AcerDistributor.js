@@ -32,19 +32,19 @@ function AcerDistributor() {
                 </motion.div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/monitor.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/monitor.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Monitores</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/computer-desktop.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/computer-desktop.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Ordenadores</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/proyector.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/proyector.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Proyectores</p>
                 </div>

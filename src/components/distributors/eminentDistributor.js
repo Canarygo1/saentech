@@ -25,37 +25,37 @@ function EminentDistributor() {
                 <motion.div
                   className="w-auto flex flex-col items-center justify-self-center text-primary text-sm ">
                   <div className="w-12 " >
-                    <StaticImage src="../../images/icons-distributors/keyboard.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/keyboard.png" alt="A kitten" />
                   </div>
                   <p className=" ml h-full flex items-center">Perifericos</p>
                 </motion.div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/headphones.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/headphones.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Audio</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/gamepad.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/gamepad.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Gaming</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/cctv.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/cctv.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Video-vigilancia</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/wifi-router.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/wifi-router.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Networking</p>
                 </div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/cable.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/cable.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Cables y accesorios</p>
                 </div>

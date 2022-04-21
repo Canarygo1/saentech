@@ -15,7 +15,6 @@ const IndexPage = () => {
   useEffect(() => {
     async function getDossiers() {
       let data = await getAllCatalogos();
-      console.log(data)
       setDossiers(data)
     }
     getDossiers()

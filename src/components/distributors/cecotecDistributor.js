@@ -26,13 +26,13 @@ function CecotecDistributor() {
                 <motion.div
                   className="w-auto flex flex-col items-center justify-self-center text-primary text-sm ">
                   <div className="w-12 " >
-                    <StaticImage src="../../images/icons-distributors/running.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/running.png" alt="A kitten" />
                   </div>
                   <p className=" ml h-full flex items-center">Deporte</p>
                 </motion.div>
                 <div className="w-auto flex flex-col items-center text-primary text-sm ">
                   <div className="w-12 ">
-                    <StaticImage src="../../images/icons-distributors/electric-appliance.png" alt="A kitten" />
+                    <StaticImage src="../../images/components/electric-appliance.png" alt="A kitten" />
                   </div>
                   <p className=" h-full flex items-center">Electrodomésticos</p>
                 </div>
