@@ -74,9 +74,9 @@ function Seo({ description, lang, meta, title }) {
 }
 
 Seo.defaultProps = {
-  lang: `en`,
+  lang: `es`,
   meta: [],
-  description: ``,
+  description: `¿Por qué Confiar en Saen Tech Canarias? Saen Tech es el resultado de la suma de mucha experiencia, gran profesionalidad, sacrifcio, constancia y `,
 }
 
 Seo.propTypes = {

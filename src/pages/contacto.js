@@ -15,7 +15,7 @@ const Contacto = () => {
 
   })
   return <Layout>
-    <Seo title="Home" />
+    <Seo title="Contacto" />
     <div className={"mt-28 flex flex-col items-center"}>
       <div>
         <p className={"text-white text-xl font-bold "}>Datos de contacto</p>
@@ -24,7 +24,7 @@ const Contacto = () => {
         <div className={"basis-1/2 lg:w-2/3 flex  flex-col"}>
           <p className={"text-white text-lg lg:min-w-100 h-1"}>¿En qué te podemos ayudar?</p>
           <p className={"text-white text-sm lg:min-w-100"}>Nos pondremos en contacto contigo a la mayor brevedad</p>
-          <form className="flex flex-col ">
+          <form className="flex flex-col " action={'https://saentechflyatjtl-testsaentech.functions.fnc.fr-par.scw.cloud'}>
             <Textfield id={"name"} htmlFor={"name"} label={"Nombre"} placeholder={"Nombre"}/>
             <Textfield id={"email"} htmlFor={"email"} label={"Correo Electronico"} placeholder={"Correo"}/>
             <label className="block text-white text-sm font-bold mb-2 my-3" htmlFor="comercial">
@@ -59,7 +59,7 @@ const Contacto = () => {
               <textarea rows={4} className="resize-y rounded-md w-full"></textarea>
             <button
               className=" mt-8 bg-primary self-center md:self-end text-white font-bold py-2 px-4 w-28 rounded-xl focus:outline-none focus:shadow-outline"
-              type="button">
+              type="submit">
               Enviar
             </button>
           </form>
