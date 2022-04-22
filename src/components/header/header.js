@@ -177,6 +177,8 @@ export default function Header() {
                 className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Saentech Pro</span></Link>
               <Link to="/contacto" className="my-3"><span
                 className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Contacto</span></Link>
+              <Link to="http://pedidos.saentech.com/ogonlineapp/login/" className="my-3"><span
+                className="py-3 w-full mx-6 hover:bg-primary hover:text-white text-primary font-bold">Acceso clientes</span></Link>
             </div>
           </div>
         </div>
