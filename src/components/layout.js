@@ -17,9 +17,11 @@ import Circuiteria from "./circuiteria/circuiteria.js"
 const Layout = ({ children }) => {
   return (
     <>
+      <div className={"hidden xl:flex"}>
+        <Circuiteria/>
+      </div>
       <Header />
       <main>
-        <Circuiteria/>
         {children}
       </main>
       <Footer />

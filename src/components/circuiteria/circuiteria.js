@@ -3,7 +3,7 @@ import "../layout.css"
 import "./circuiteria.css"
 
 const Circuiteria = () => (
-  <div className={"divAnimation"}>
+  <div className={"divAnimation xl:block hidden"}>
     <svg version="1.1" className="circuit-no-fill" xmlns="http://www.w3.org/2000/svg"
          xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 96.3 457.3" xmlSpace="preserve">
