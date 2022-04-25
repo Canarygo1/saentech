@@ -12,16 +12,12 @@ import "./layout.css"
 import "./style.css"
 import Footer from "./footer"
 import Header from "./header/header"
-import Circuiteria from "./circuiteria/circuiteria.js"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <div className={"hidden xl:flex"}>
-        <Circuiteria/>
-      </div>
       <Header />
-      <main>
+      <main className={"pt-16"}>
         {children}
       </main>
       <Footer />

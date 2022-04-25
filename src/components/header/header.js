@@ -25,7 +25,7 @@ export default function Header() {
   }
 
   return (
-    <header className="text-white mb-16 flex flex-col">
+    <header className="text-white flex flex-col">
       <Link to={"/subvenciones"} className={"self-center hidden w-1/2 xl:flex items-center justify-evenly"}>
         <div className={"mt-2 rounded-lg border-primary border"}>
          <span className=" text-primary text-lg mx-2">
@@ -168,15 +168,15 @@ export default function Header() {
             <a href="#" className="close close-js" onClick={closeMenu} />
             <div className="w-full text-black flex flex flex-col text-center items-center text-2xl mt-20">
               <Link to="/" className="my-3"><span
-                className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Inicio</span></Link>
-              <Link to="/" className="my-3"><span
-                className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Conocenos</span></Link>
+                className="py-3 w-full mx-6">Inicio</span></Link>
+              <Link to="/#third" className="my-3"><span
+                className="py-3 w-full mx-6">Conocenos</span></Link>
               <Link to="/catalogo" className="my-3"><span
-                className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Catalogos</span></Link>
+                className="py-3 w-full mx-6">Catalogos</span></Link>
               <Link to="/saentech-pro" className="my-3"><span
-                className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Saentech Pro</span></Link>
+                className="py-3 w-full mx-6">Saentech Pro</span></Link>
               <Link to="/contacto" className="my-3"><span
-                className="py-3 w-full mx-6 hover:bg-primary hover:text-white">Contacto</span></Link>
+                className="py-3 w-full mx-6">Contacto</span></Link>
               <Link to="http://pedidos.saentech.com/ogonlineapp/login/" className="my-3"><span
                 className="py-3 w-full mx-6 hover:bg-primary hover:text-white text-primary font-bold">Acceso clientes</span></Link>
             </div>
