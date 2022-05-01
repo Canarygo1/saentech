@@ -10,7 +10,7 @@ exports.handler =  async (event, context, callback) => {
   }).join("<br><br>");
 
   const mail_to_send = {
-    to: ["alecruzdev@gmail.com","canarygo1@gmail.com"],
+    to: ["comercial@saentech.es","canarygo1@gmail.com"],
     from: 'contacto.cross.agency@gmail.com',
     subject: subject,
     html: body,
@@ -22,6 +22,7 @@ exports.handler =  async (event, context, callback) => {
       body: "Message sent successfully"
     }
   } catch(e){
+    console.log(e);
     return {
       statusCode: e.code,
       body: e.message

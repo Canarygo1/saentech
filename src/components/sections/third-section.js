@@ -96,6 +96,7 @@ const ThirdSection = () => {
         <div>
         </div>
         <div className="flex flex-wrap lg:ml-4 mt-4 items-center section-products justify-center gap-4 mx-2">
+
           <CardProductImage url={products.length === 0 ? "" : products[1].Url}
                             name={products.length === 0 ? "" : products[1].NombreCorto}
                             onClick={products.length === 0 ? () => {
