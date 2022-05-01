@@ -10,7 +10,7 @@ exports.handler =  async (event, context, callback) => {
   }).join("<br><br>");
 
   const mail_to_send = {
-    to: "alecruzdev@gmail.com",
+    to: ["alecruzdev@gmail.com","canarygo1@gmail.com"],
     from: 'contacto.cross.agency@gmail.com',
     subject: subject,
     html: body,
