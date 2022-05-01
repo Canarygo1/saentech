@@ -5,7 +5,7 @@ function CardProductImage({
   }
                           }) {
   return (
-    <div className={`flex flex-col justify-end shadow-lg items-center bg-white px-2 ${classValue}`} onClick={() => onClick()}>
+    <button className={`flex flex-col justify-end shadow-lg items-center bg-white px-2 ${classValue}`} onClick={() => onClick()}>
       <div className="w-full h-52 bg-secondary mt-6 " style={{
         backgroundColor: "white",
         backgroundPosition: "center",
@@ -21,7 +21,7 @@ function CardProductImage({
         </div>
       }
 
-    </div>
+    </button>
   )
 }
 

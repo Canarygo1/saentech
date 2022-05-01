@@ -26,18 +26,22 @@ export default function Header() {
 
   return (
     <header className="text-white flex flex-col">
-      <Link to={"/subvenciones"} className={"self-center hidden w-1/2 xl:flex items-center justify-evenly"}>
-        <div className={"mt-2 rounded-lg border-primary border"}>
+      <div className={"self-center hidden w-1/2 xl:flex items-center justify-evenly"}>
+      <div className={"mt-2 rounded-lg border-primary border"}>
          <span className=" text-primary text-lg mx-2">
           Horario de L-J: 08:30 - 18:00 V: 08:30 - 15:00
         </span>
         </div>
         <div className={"mt-2 animate-pulse"}>
+          <Link to={"/subvenciones"} className={""}>
+
          <span className="text-error text-lg mx-2">
           ¡ACCEDE A TU SUBVENCIÓN!
         </span>
+          </Link>
         </div>
-      </Link>
+
+        </div>
       <div
         className="hidden xl:flex xl:flex-wrap xl:items-center xl:justify-between xl:justify-around xl:py-2 xl:px-5 xl:px-0">
         <Link to={"/"}>
