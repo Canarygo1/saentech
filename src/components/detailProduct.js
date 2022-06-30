@@ -17,7 +17,6 @@ function DetailProduct({ product, onClose }) {
     e.preventDefault()
     // setLoading(true);
     try {
-      console.log("FAFDXASFD")
       body = { ...body, email_usuario }
       console.log(email_usuario)
       console.log(body)

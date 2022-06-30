@@ -5,15 +5,11 @@ import * as React from "react"
 import Separator from "../separator"
 import { StaticImage } from "gatsby-plugin-image"
 import { useEffect, useState } from "react"
-import { getStorage, ref, getDownloadURL } from "firebase/storage";
-import { doc, getDoc,getFirestore } from "firebase/firestore";
-
 import AsusDistributor from "../distributors/AsusDistributor"
 import BrotherDistributor from "../distributors/brotherDistributor"
 import LenovoDistributor from "../distributors/lenovoDistributor"
 import MicrosoftDistributor from "../distributors/microsoftDistributor"
 import SamsungDistributor from "../distributors/samsungDistributor"
-import app from "gatsby-plugin-firebase-v9.0"
 import { Link } from "gatsby"
 import Slider from "react-slick";
 import AcerDistributor from "../distributors/AcerDistributor"
@@ -78,12 +74,11 @@ const FirstSection = () => {
   useEffect(async () => {
     async function getImages() {
     let imgUrl = await getAllCarrouselImages();
-
-    for (let i =0;i< imgUrl.length;i++){
+      console.log(imgUrl)
+      for (let i =0;i< imgUrl.length;i++){
           images2.push(
-              <img src={imgUrl[i]} alt="A kitten" className={"h-44 max-h-44 xl:h-64 xl:max-h-64 md:h-auto object-contain"}/>
+              <img src={imgUrl[i]} alt="" className={"h-44 max-h-44 xl:h-64 xl:max-h-64 md:h-auto object-contain"}/>
           );
-
     }
     setImages(images2)
     }
