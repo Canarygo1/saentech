@@ -69,7 +69,7 @@ function DetailProduct({ product, onClose }) {
             <p className="m-0 p-0 text-center">¿Quieres más información?</p>
             <p className="m-0 p-0 text-center">Facilitanos tus datos y nos pondremos en contacto contigo</p>
             <form>
-              <Textfield id={"email"} placeholder={"Email"} label={"Email"} htmlFor={"email"} onChange={(e)=>handleChangeEmail(e)}></Textfield>
+              <Textfield id={"email"} required={true} placeholder={"Email"} label={"Email"} htmlFor={"email"} onChange={(e)=>handleChangeEmail(e)}></Textfield>
             </form>
           </div>
           <div className="h-1/3 mt-2 lg:mt-0 lg:h-1/2 lg:flex lg:flex-col justify-start">

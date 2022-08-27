@@ -54,7 +54,7 @@ const Contacto = () => {
           <p className={"text-white text-sm lg:min-w-100"}>Nos pondremos en contacto contigo a la mayor brevedad</p>
           <form className="flex flex-col " onSubmit={handleSubmit}>
             <Textfield label={"nombre"} placeholder={"Nombre"} name={"nombre"} onChange={handleChange} />
-            <Textfield label={"mail_usuario"} placeholder={"Correo"} name={"mail_usuario"}
+            <Textfield label={"mail_usuario"} placeholder={"Correo"} required={true} name={"mail_usuario"}
                        onChange={(event) => handleChange(event)} />
             <label className="block text-white text-sm font-bold mb-2 my-3" htmlFor="comercial">
               Tipo de consulta
@@ -81,7 +81,7 @@ const Contacto = () => {
                 </label>
               </div>
             </div>
-            <Textfield id={"subject"} htmlFor={"subject"} label={"subject"} placeholder={"subject"} name={"subject"}
+            <Textfield id={"subject"} htmlFor={"subject"} label={"subject"} required={true} placeholder={"subject"} name={"subject"}
                        onChange={handleChange} />
             <label className="block text-white text-sm font-bold mb-2" htmlFor={"subject"}>
               Mensaje
