@@ -18,11 +18,8 @@ const IndexPage = () => {
   })
   return (
     <Layout>
-      <div className={"hidden xl:flex"}>
-        <Circuiteria />
-      </div>
       <Seo title="Home" />
-      <Separator dataHeigth="100px" dataWidth="1px" />
+      <Separator dataHeigth="0px" dataWidth="1px" />
       <FirstSection />
       <Separator dataHeigth="50px" dataWidth="1px" />
       <SecondSection />

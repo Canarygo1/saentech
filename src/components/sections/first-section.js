@@ -74,10 +74,9 @@ const FirstSection = () => {
   useEffect(async () => {
     async function getImages() {
     let imgUrl = await getAllCarrouselImages();
-      console.log(imgUrl)
       for (let i =0;i< imgUrl.length;i++){
           images2.push(
-              <img src={imgUrl[i]} alt="" className={"h-44 max-h-44 xl:h-64 xl:max-h-64 md:h-auto object-contain"}/>
+              <img src={imgUrl[i]} alt="" className={"h-100 max-h-100 xl:h-full w-full xl:max-h-160 md:h-160 object-contain"}/>
           );
     }
     setImages(images2)
@@ -87,7 +86,7 @@ const FirstSection = () => {
 
   },[])
   return <div className={"flex flex-col justify-center items-center"}>
-    <div className={"visible w-9/12 "}>
+    <div className={"visible w-11/12"}>
       <CarrouselSlider >
         {images}
       </CarrouselSlider>

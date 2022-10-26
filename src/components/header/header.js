@@ -74,12 +74,10 @@ export default function Header() {
       </span>
           </Link>
           <Link to="/contacto">
-
           <span className="text-lg mx-6">
         Contacto
       </span>
           </Link>
-
         </div>
 
         <div className="hidden md:flex items-center">
@@ -176,7 +174,7 @@ export default function Header() {
               <Link to="/#third" className="my-3"><span
                 className="py-3 w-full mx-6">Conocenos</span></Link>
               <Link to="/catalogo" className="my-3"><span
-                className="py-3 w-full mx-6">Catalogos</span></Link>
+                className="py-3 w-full mx-6">Catálogos</span></Link>
               <Link to="/saentech-pro" className="my-3"><span
                 className="py-3 w-full mx-6">Saentech Pro</span></Link>
               <Link to="/contacto" className="my-3"><span
