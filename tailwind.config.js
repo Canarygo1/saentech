@@ -2,7 +2,10 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-
+    backdropFilter: {
+      'none': 'none',
+      'blur': 'blur(20px)',
+    },
     extend: {
       lineHeight: {
         '11': '60px',
@@ -62,5 +65,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/line-clamp'),
+    require('tailwindcss-filters'),
+
   ],
 }

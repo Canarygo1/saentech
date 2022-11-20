@@ -91,7 +91,7 @@ const ThirdSection = () => {
           <span>Tenemos productos de última generación</span>
         </div>
         <div className="self-center bg-primary rounded-full fit-content text-lg py-1 px-4 mx-3 mt-10">
-          Conócenos
+          Conocenos
         </div>
         <div>
         </div>

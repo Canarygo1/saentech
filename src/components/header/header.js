@@ -32,14 +32,7 @@ export default function Header() {
           Horario de L-J: 08:30 - 18:00 V: 08:30 - 15:00
         </span>
         </div>
-        <div className={"mt-2 animate-pulse"}>
-          <Link to={"/subvenciones"} className={""}>
 
-         <span className="text-error text-lg mx-2">
-          ¡ACCEDE A TU SUBVENCIÓN!
-        </span>
-          </Link>
-        </div>
 
         </div>
       <div
