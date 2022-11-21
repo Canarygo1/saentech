@@ -68,7 +68,7 @@ const SecondSection = () => (
           />
         </div>
         <div className={'flex flex-col justify-end items-start  '}>
-          <p className={'text-lg'}>Jose Manuel</p>
+          <p className={'text-lg'}>Juan Luis</p>
           <p className={'text-lg '}>Gerencia / Dpto. Compras</p>
           <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
             Contactar
