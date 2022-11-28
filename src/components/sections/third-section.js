@@ -86,13 +86,11 @@ const ThirdSection = () => {
     <div>
       <div className="w-full  flex flex-col text-center text-white  text-7xl  bg-opacity-10 pt-14" id={"third"}>
         <span className="leading-snug md:leading-normal mx-3 md:mx-0">Miles de productos al alcance de tu mano</span>
-        <div className="mt-10 text-2xl flex flex-col">
+        <div className="mt-10 text-2xl flex flex-col mb-8">
           <span>Disponemos de mas de 500 metros cuadrados de almacén</span>
           <span>Tenemos productos de última generación</span>
         </div>
-        <div className="self-center bg-primary rounded-full fit-content text-lg py-1 px-4 mx-3 mt-10">
-          Conocenos
-        </div>
+
         <div>
         </div>
         <div className="flex flex-wrap lg:ml-4 mt-4 items-center section-products justify-center gap-4 mx-2">

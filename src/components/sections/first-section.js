@@ -216,6 +216,7 @@ const FirstSection = () => {
         <XiaomiDistributor/>
       </div>
     </Slider>
+
   </div>
 }
 

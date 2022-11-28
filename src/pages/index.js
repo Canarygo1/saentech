@@ -8,8 +8,7 @@ import Separator from "../components/separator"
 import ThirdSection from "../components/sections/third-section"
 import FifthSection from "../components/sections/fifth-section"
 import { useEffect } from "react"
-import Circuiteria from "../components/circuiteria/circuiteria"
-
+import { Script } from "gatsby"
 
 const IndexPage = () => {
 
@@ -18,6 +17,7 @@ const IndexPage = () => {
   })
   return (
     <Layout>
+      <Script src="//code.tidio.co/qqcg8kzwuexeh1fdlrjvx5va1yj3s2q3.js" async/>
       <Seo title="Home" />
       <Separator dataHeigth="0px" dataWidth="1px" />
       <FirstSection />
