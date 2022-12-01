@@ -12,6 +12,8 @@ import MicrosoftDistributor from "../distributors/microsoftDistributor"
 import SamsungDistributor from "../distributors/samsungDistributor"
 import { Link } from "gatsby"
 import Slider from "react-slick";
+import "animate.css/animate.min.css";
+
 import AcerDistributor from "../distributors/AcerDistributor"
 import AlcatelDistributor from "../distributors/alcatelDistributor"
 import AppleDistributor from "../distributors/AppleDistributor"
@@ -93,7 +95,7 @@ const FirstSection = () => {
     </div>
     <Separator dataHeigth="100px" dataWidth="1px" />
     <div
-      className="first-section w-full  flex items-end xl:items-start justify-center xl:justify-start h-100 xl:h-110">
+      className="mr-8 first-section w-full  flex items-end xl:items-start justify-center xl:justify-start h-100 xl:h-110">
       <div className="w-auto flex flex-col content-first-section text-white fit-content hidden xl:flex">
         <Separator dataHeigth="270px" dataWidth="1px" />
         <span className="my-2 ">
@@ -103,17 +105,29 @@ const FirstSection = () => {
         mejores productos
       </span>
         <span className="text-white text-xl my-5">
-        Para todo el mundo desde pequeños hasta grandes clientes
+        Mayorista canario de productos tecnológicos para<br/> grandes y pequeño negocios.
       </span>
-        <div className="flex text-lg">
-          <div className="bg-primary rounded-full text-black py-1 px-4 mx-3">
-           <Link to={"contacto"}>Contáctanos</Link>
-          </div>
-          <div className="bg-white rounded-full text-black py-1 px-4 mx-3">
-            <Link to={"#second-section"}>Nuestras Ventajas</Link>
-
-          </div>
+        <div className="flex text-lg items-start mt-4">
+            <Link className={'bg-primary rounded-lg text-black py-2 px-28 text-white'} to={"contacto"}>Contáctanos</Link>
         </div>
+        <div className={'flex gap-2 mt-8'}>
+            <div className={'flex flex-row gap-2 h-16 m-0 justify-center items-center'}>
+              <div className={'h-5/6 bg-white w-0.5'}></div>
+              <div className={'flex h-full flex-col  justify-evenly'}  >
+                <p className={'text-3xl m-0 font-bold '}>500m²<span>+</span></p>
+                <p className={'text-sm m-0'}>Miles de productos</p>
+              </div>
+            </div>
+          <div className={'flex flex-row gap-2 h-16 m-0 justify-center items-center'}>
+            <div className={'h-5/6 bg-white w-0.5'}></div>
+            <div className={'flex h-full flex-col  justify-evenly'}  >
+              <p className={'text-3xl m-0 font-bold '}>Stock propio</p>
+              <p className={'text-sm m-0'}>Disponibles para recogida en 24h</p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
         <div className="border-2 border-primary rounded-full xl:hidden justify-center flex fixed bottom-4 text-black w-60 h-14 xl:hidden flex flex-row">
           <a href="https://goo.gl/maps/ascJ6JSLR8sDrFef6" className="h-full w-1/2 bg-primary border-l-2 rounded-l-full border-primary flex items-center justify-center">

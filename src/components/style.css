@@ -10,6 +10,11 @@
 .test2{
 
 }
+.boxes{
+  overflow: hidden;
+
+
+}
 .first-section{
   background-image: url("./../images/cohete.png");
   background-position: center;
@@ -73,7 +78,7 @@
   margin-left: 9%;
 }
 .content-first-section *{
-  align-self: center;
+  align-self: flex-start;
 }
 .ReactModal__Overlay {
   opacity: 0;
@@ -104,7 +109,17 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+.vertical-text{
+  writing-mode: vertical-rl;
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #BDD345;
+  font-size: 50px;
+  text-shadow: 0 0 10px #BDD345;
 
+
+}
 .icon-background{
   background-position: center;
   background-repeat: no-repeat;
@@ -175,7 +190,12 @@
   background: white;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-
+.second-bg{
+  background-image:url("../images/bg-second.png") ;
+  background-color: #000000;
+  z-index: -10;
+  background-repeat: no-repeat;
+}
 .bar.animate:after {
   top: 0;
   width: 60px;

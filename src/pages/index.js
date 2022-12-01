@@ -12,15 +12,17 @@ import { Script } from "gatsby"
 
 const IndexPage = () => {
 
-  useEffect(() => {
 
-  })
   return (
     <Layout>
       <Script src="//code.tidio.co/qqcg8kzwuexeh1fdlrjvx5va1yj3s2q3.js" async/>
       <Seo title="Home" />
       <Separator dataHeigth="0px" dataWidth="1px" />
+      <div
+        data-aos="fade-left" //Here you can use any of the AOS animations
+      >
       <FirstSection />
+      </div>
       <Separator dataHeigth="50px" dataWidth="1px" />
       <SecondSection />
       <Separator dataHeigth="80px" dataWidth="1px" />

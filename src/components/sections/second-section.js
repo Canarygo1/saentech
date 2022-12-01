@@ -1,18 +1,40 @@
 import * as React from "react"
 import Separator from "../separator"
 import { StaticImage } from "gatsby-plugin-image"
+import otterGIF from './../../images/fotos_empleados_saentech/test.gif'
+import otterPNG from './../../images/fotos_empleados_saentech/juan2.gif'
+import otter2PNG from './../../images/fotos_empleados_saentech/Juan.gif'
+import { useEffect, useState } from "react"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const SecondSection = () => (
+const SecondSection = () => {
+  const [animate, setAnimate] = useState(false);
 
-  <div id='second-section' className="max-w-full text-center text-white text-7xl mt-10 ">
-    <span className="leading-snug md:leading-normal">Más de 15 años de experiencia</span>
+  useEffect(()=>{
+    AOS.init({duration:2000})
+  })
+  return (<div className={'flex flex-row '} >
+    <div className={'flex flex-col '}  data-aos="fade-down"
+         data-aos-easing="linear"
+         data-aos-duration="2000">
+      <p className={'pt-20 vertical-text pl-10 '} >SAENTECH</p>
+      <p className={'pt-20 vertical-text pl-10 '} >SAENTECH</p>
+      <p className={'pt-20 vertical-text pl-10 '} >SAENTECH</p>
+      <p className={'pt-20 vertical-text pl-10 '} >SAENTECH</p>
+      <p className={'pt-20 vertical-text pl-10 '} >SAENTECH</p>
+      <p className={'pt-20 vertical-text pl-10 '} >SAENTECH</p>
+    </div>
+
+  <div id='second-section' className="max-w-full text-center text-white text-7xl mt-10 second-bg">
+    <span className="leading-snug md:leading-normal ">Más de 15 años de experiencia</span>
     <Separator dataHeigth="50px" dataWidth="1px" />
-    <div className={'mx-16 md:mx-4'}>
+    <div className={'mx-16 md:mx-4 max-h-20 mb-96'} data-aos="fade-up" >
       <StaticImage className={'mb-8'} src={'./../../images/lineatemporal.png'}
                    width={600}
                    quality={100}
       />
-      <p className={'leading-8 text-left text-lg md:mx-96'}>
+      <p className={'leading-8 text-left text-lg md:mx-96'} >
         SaEn Tech nace en 2007 de la ilusión de un grupo de profesionales con más de 15 años en el sector tecnológico y
         unidos para dar el mejor servicio que merece el cliente, al mejor precio,
         empresa creada con personal y capital 100 % canario.
@@ -21,31 +43,31 @@ const SecondSection = () => (
         portfolio de productos que aquí les presentamos, así como demostrarles nuestro gran servicio de pre-venta,
         post-venta y servicio técnico profesional que disponemos.
       </p>
-      <StaticImage className={'mb-16'} src={'./../../images/logo-st.png'}
+      <StaticImage className={'mb-56'} src={'./../../images/logo-st.png'}
                    width={80}
                    quality={100}
       />
     </div>
-    <span className="md:leading-normal ">Nuestros beneficios</span>
+    <span className="md:leading-normal  ">Nuestros beneficios</span>
     <Separator dataHeigth="50px" dataWidth="1px" />
-    <div className={' mx-16 md:mx-40'}>
-      <div className='mt-20 grid md:grid-col-12 lg:grid-cols-3 gap-12 '>
-        <div className="flex  bg-white bg-opacity-20 backdrop-blur-md border-2 border-primary rounded drop-shadow-lg	"  >
+    <div className={' mx-16 md:mx-40'} >
+      <div className='mt-20 grid md:grid-col-12 lg:grid-cols-3 gap-12 ' >
+        <div className="flex  bg-white bg-opacity-20 backdrop-blur-md border-2 border-primary rounded drop-shadow-lg boxes" data-aos="fade-right">
           <div className=" h-64 flex flex-col justify-between w-full ">
-          <div className={'flex justify-center  '}>
-            <StaticImage
-              src="./../../images/iconos_ventajas/rapido.png"
-              width={180}
-              quality={100}
-              formats={["auto", "webp", "avif"]}
-              alt="A logo"
-            />
-          </div>
-            <p className={'text-3xl font-bold'}>Envíos 24/48h</p>
+            <div className={'flex justify-center  '} >
+              <StaticImage
+                src="./../../images/iconos_ventajas/rapido.png"
+                width={180}
+                quality={100}
+                formats={["auto", "webp", "avif"]}
+                alt="A logo"
+              />
+            </div>
+            <p className={'text-2xl font-bold'}>Envíos 24/48h</p>
           </div>
         </div>
-        <div className="flex bg-white bg-opacity-20 backdrop-blur-md border-2 border-primary rounded drop-shadow-lg	"  >
-          <div className=" h-64 flex flex-col justify-between w-full ">
+        <div className="flex bg-white bg-opacity-20 backdrop-blur-md border-2 border-primary rounded drop-shadow-lg	boxes" data-aos="fade-right">
+          <div className="h-64 flex flex-col justify-between w-full ">
             <div className={'flex justify-center'}>
               <StaticImage
                 src="./../../images/iconos_ventajas/online.png"
@@ -55,10 +77,10 @@ const SecondSection = () => (
                 alt="A logo"
               />
             </div>
-            <p className={'text-3xl font-bold'}>Pedidos online</p>
+            <p className={'text-2xl  font-bold'}>Pedidos online</p>
           </div>
         </div>
-        <div className="flex  bg-white bg-opacity-20 backdrop-blur-md border-2 border-primary rounded drop-shadow-lg	"  >
+        <div className="flex  bg-white bg-opacity-20 backdrop-blur-md border-2 border-primary rounded drop-shadow-lg boxes" data-aos="fade-right">
           <div className=" h-64 flex flex-col justify-between w-full ">
             <div className={'flex justify-center'}>
               <StaticImage
@@ -69,10 +91,11 @@ const SecondSection = () => (
                 alt="A logo"
               />
             </div>
-            <p className={'text-3xl font-bold'}>Chat de soporte</p>
+            <p className={'text-2xl  font-bold'}>Chat de soporte</p>
           </div>
         </div>
-        <div className="flex mb-28 bg-white bg-opacity-20 backdrop-blur-md border-2 border-primary rounded drop-shadow-lg	"  >
+        <div
+          className="flex mb-28 bg-white bg-opacity-20 backdrop-blur-md border-2 border-primary rounded drop-shadow-lg	boxes" data-aos="fade-left">
           <div className=" h-64 flex flex-col justify-between w-full ">
             <div className={'flex justify-center'}>
               <StaticImage
@@ -83,10 +106,11 @@ const SecondSection = () => (
                 alt="A logo"
               />
             </div>
-            <p className={'text-3xl font-bold leading-8'}>Atención Profesional al cliente</p>
+            <p className={'text-2xl font-bold leading-8'}>Atención Profesional al cliente</p>
           </div>
         </div>
-        <div className="flex mb-28 bg-white bg-opacity-20 backdrop-blur-md border-2 border-primary rounded drop-shadow-lg	"  >
+        <div
+          className="flex mb-28  bg-white bg-opacity-20 backdrop-blur-md border-2 border-primary rounded drop-shadow-lg	boxes" data-aos="fade-left">
           <div className=" h-64 flex flex-col justify-between w-full ">
             <div className={'flex justify-center'}>
               <StaticImage
@@ -97,10 +121,11 @@ const SecondSection = () => (
                 alt="A logo"
               />
             </div>
-            <p className={'text-3xl font-bold leading-8'}>Asesoramiento técnico y de ventas a tu empresa</p>
+            <p className={'text-2xl  font-bold leading-8'}>Asesoramiento técnico y de ventas a tu empresa</p>
           </div>
         </div>
-        <div className="flex mb-28 bg-white bg-opacity-20 backdrop-blur-md border-2 border-primary rounded drop-shadow-lg	"  >
+        <div
+          className="flex mb-28  bg-white bg-opacity-20 backdrop-blur-md border-2 border-primary rounded drop-shadow-lg	boxes" data-aos="fade-left">
           <div className=" h-64 flex flex-col justify-between w-full ">
             <div className={'flex justify-center'}>
               <StaticImage
@@ -111,184 +136,182 @@ const SecondSection = () => (
                 alt="A logo"
               />
             </div>
-            <p className={'text-3xl font-bold leading-8'}>Servicio postventa efectivo</p>
+            <p className={'text-2xl font-bold leading-8'}>Servicio postventa efectivo</p>
           </div>
         </div>
       </div>
-  </div>
+    </div>
     <span className="leading-snug md:leading-normal">Equipo a tu disposición</span>
     <Separator dataHeigth="50px" dataWidth="1px" />
     <div className={' mx-16 md:mx-40'}>
-    <div className="grid grid-col-12 lg:grid-cols-5 gap-20 md:gap-8 ">
-      <div className=" h-60 flex flex-col justify-between">
-        <div>
-          <StaticImage
-            src="./../../images/fotos_empleados_saentech/empleado8.png"
-            width={100}
-            quality={100}
-            formats={["auto", "webp", "avif"]}
-            alt="A logo"
-          />
+      <div className="grid grid-col-12 lg:grid-cols-5 gap-20 md:gap-8 ">
+        <div className=" h-60 flex flex-col justify-between">
+          <div>
+            <StaticImage
+              src="./../../images/fotos_empleados_saentech/empleado8.png"
+              width={100}
+              quality={100}
+              formats={["auto", "webp", "avif"]}
+              alt="A logo"
+            />
+          </div>
+          <div className={'flex flex-col justify-end items-start  '}>
+            <p className={'text-lg'}>Juan Luis Sanchez</p>
+            <p className={'text-lg '}>Gerencia / Dpto. Compras</p>
+            <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
+              Contactar
+            </button>
+          </div>
         </div>
-        <div className={'flex flex-col justify-end items-start  '}>
-          <p className={'text-lg'}>Juan Luis Sanchez</p>
-          <p className={'text-lg '}>Gerencia / Dpto. Compras</p>
-          <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
-            Contactar
-          </button>
+        <div className=" h-60 flex flex-col justify-between">
+          <div>
+            <StaticImage
+              src="./../../images/fotos_empleados_saentech/empleado5.png"
+              width={100}
+              quality={100}
+              formats={["auto", "webp", "avif"]}
+              alt="A logo"
+            />
+          </div>
+          <div className={'flex flex-col justify-end items-start  '}>
+            <p className={'text-lg'}>Jose Manuel Encinoso</p>
+            <p className={'text-lg '}>Gerencia / Dpto. Admin</p>
+            <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
+              Contactar
+            </button>
+          </div>
         </div>
-      </div>
-      <div className=" h-60 flex flex-col justify-between">
-        <div>
-          <StaticImage
-            src="./../../images/fotos_empleados_saentech/empleado5.png"
-            width={100}
-            quality={100}
-            formats={["auto", "webp", "avif"]}
-            alt="A logo"
-          />
+        <div className=" h-60 flex flex-col justify-between">
+          <div>
+            <StaticImage
+              src="./../../images/fotos_empleados_saentech/empleado2.png"
+              width={100}
+              quality={100}
+              formats={["auto", "webp", "avif"]}
+              alt="A logo"
+            />
+          </div>
+          <div className={'flex flex-col justify-end items-start  '}>
+            <p className={'text-lg'}>Martín Ruiz</p>
+            <p className={'text-lg '}>Dpto. Comercial</p>
+            <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
+              Contactar
+            </button>
+          </div>
         </div>
-        <div className={'flex flex-col justify-end items-start  '}>
-          <p className={'text-lg'}>Jose Manuel Encinoso</p>
-          <p className={'text-lg '}>Gerencia / Dpto. Admin</p>
-          <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
-            Contactar
-          </button>
+        <div className=" h-60 flex flex-col justify-between">
+          <div>
+            <StaticImage
+              src="./../../images/fotos_empleados_saentech/empleado3.png"
+              width={100}
+              quality={100}
+              formats={["auto", "webp", "avif"]}
+              alt="A logo"
+            />
+          </div>
+          <div className={'flex flex-col justify-end items-start  '}>
+            <p className={'text-lg'}>Jesus Manuel Sieira</p>
+            <p className={'text-lg '}>Dpto. Técnico</p>
+            <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
+              Contactar
+            </button>
+          </div>
         </div>
-      </div>
-      <div className=" h-60 flex flex-col justify-between">
-        <div>
-          <StaticImage
-            src="./../../images/fotos_empleados_saentech/empleado2.png"
-            width={100}
-            quality={100}
-            formats={["auto", "webp", "avif"]}
-            alt="A logo"
-          />
+        <div className=" h-60 flex flex-col justify-between">
+          <div>
+            <StaticImage
+              src="./../../images/fotos_empleados_saentech/empleado7.png"
+              width={100}
+              quality={100}
+              formats={["auto", "webp", "avif"]}
+              alt="A logo"
+            />
+          </div>
+          <div className={'flex flex-col justify-end items-start  '}>
+            <p className={'text-lg'}>Jorge Ravelo</p>
+            <p className={'text-lg '}>Dpto. Comercial</p>
+            <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
+              Contactar
+            </button>
+          </div>
         </div>
-        <div className={'flex flex-col justify-end items-start  '}>
-          <p className={'text-lg'}>Martín Ruiz</p>
-          <p className={'text-lg '}>Dpto. Comercial</p>
-          <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
-            Contactar
-          </button>
+        <div className=" h-60 flex flex-col justify-between">
+          <div>
+            <StaticImage
+              src="./../../images/fotos_empleados_saentech/empleado4.png"
+              width={100}
+              quality={100}
+              formats={["auto", "webp", "avif"]}
+              alt="A logo"
+            />
+          </div>
+          <div className={'flex flex-col justify-end items-start  '}>
+            <p className={'text-lg'}>Luis Rago Tovar</p>
+            <p className={'text-lg '}>Dpto. Empresas</p>
+            <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
+              Contactar
+            </button>
+          </div>
         </div>
-      </div>
-      <div className=" h-60 flex flex-col justify-between">
-        <div>
-          <StaticImage
-            src="./../../images/fotos_empleados_saentech/empleado3.png"
-            width={100}
-
-            quality={100}
-            formats={["auto", "webp", "avif"]}
-            alt="A logo"
-          />
+        <div className=" h-60 flex flex-col justify-between">
+          <div>
+            <StaticImage
+              src="./../../images/fotos_empleados_saentech/empleado6.png"
+              width={100}
+              quality={100}
+              formats={["auto", "webp", "avif"]}
+              alt="A logo"
+            />
+          </div>
+          <div className={'flex flex-col justify-end items-start  '}>
+            <p className={'text-lg'}>Juan Tee Wu</p>
+            <p className={'text-lg '}>Dpto. Técnico / SAT</p>
+            <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
+              Contactar
+            </button>
+          </div>
         </div>
-        <div className={'flex flex-col justify-end items-start  '}>
-          <p className={'text-lg'}>Jesus Manuel Sieira</p>
-          <p className={'text-lg '}>Dpto. Técnico</p>
-          <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
-            Contactar
-          </button>
+        <div className=" h-60 flex flex-col justify-between">
+          <div>
+            <StaticImage
+              src="./../../images/fotos_empleados_saentech/empleado1.png"
+              width={100}
+              quality={100}
+              formats={["auto", "webp", "avif"]}
+              alt="A logo"
+            />
+          </div>
+          <div className={'flex flex-col justify-end items-start  '}>
+            <p className={'text-lg'}>Dani Ruiz</p>
+            <p className={'text-lg '}>Dpto. logistica</p>
+            <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
+              Contactar
+            </button>
+          </div>
         </div>
-      </div>
-      <div className=" h-60 flex flex-col justify-between">
-        <div>
-          <StaticImage
-            src="./../../images/fotos_empleados_saentech/empleado7.png"
-            width={100}
-
-            quality={100}
-            formats={["auto", "webp", "avif"]}
-            alt="A logo"
-          />
+        <div className=" h-60 flex flex-col justify-between">
+          <div>
+            <StaticImage
+              src="./../../images/fotos_empleados_saentech/empleado.png"
+              width={100}
+              quality={100}
+              formats={["auto", "webp", "avif"]}
+              alt="A logo"
+            />
+          </div>
+          <div className={'flex flex-col justify-end items-start  '}>
+            <p className={'text-lg'}>Alexis Cruz</p>
+            <p className={'text-lg '}>Dpto. Comercial</p>
+            <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
+              Contactar
+            </button>
+          </div>
         </div>
-        <div className={'flex flex-col justify-end items-start  '}>
-          <p className={'text-lg'}>Jorge Ravelo</p>
-          <p className={'text-lg '}>Dpto. Comercial</p>
-          <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
-            Contactar
-          </button>
-        </div>
-      </div>      <div className=" h-60 flex flex-col justify-between">
-        <div>
-          <StaticImage
-            src="./../../images/fotos_empleados_saentech/empleado4.png"
-            width={100}
-
-            quality={100}
-            formats={["auto", "webp", "avif"]}
-            alt="A logo"
-          />
-        </div>
-        <div className={'flex flex-col justify-end items-start  '}>
-          <p className={'text-lg'}>Luis Rago Tovar</p>
-          <p className={'text-lg '}>Dpto. Empresas</p>
-          <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
-            Contactar
-          </button>
-        </div>
-      </div>      <div className=" h-60 flex flex-col justify-between">
-        <div>
-          <StaticImage
-            src="./../../images/fotos_empleados_saentech/empleado6.png"
-            width={100}
-
-            quality={100}
-            formats={["auto", "webp", "avif"]}
-            alt="A logo"
-          />
-        </div>
-        <div className={'flex flex-col justify-end items-start  '}>
-          <p className={'text-lg'}>Juan Tee Wu</p>
-          <p className={'text-lg '}>Dpto. Técnico / SAT</p>
-          <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
-            Contactar
-          </button>
-        </div>
-      </div>      <div className=" h-60 flex flex-col justify-between">
-        <div>
-          <StaticImage
-            src="./../../images/fotos_empleados_saentech/empleado1.png"
-            width={100}
-            quality={100}
-            formats={["auto", "webp", "avif"]}
-            alt="A logo"
-          />
-        </div>
-        <div className={'flex flex-col justify-end items-start  '}>
-          <p className={'text-lg'}>Dani Ruiz</p>
-          <p className={'text-lg '}>Dpto. logistica</p>
-          <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
-            Contactar
-          </button>
-        </div>
-      </div>
-      <div className=" h-60 flex flex-col justify-between">
-        <div>
-          <StaticImage
-            src="./../../images/fotos_empleados_saentech/empleado.png"
-            width={100}
-            quality={100}
-            formats={["auto", "webp", "avif"]}
-            alt="A logo"
-          />
-        </div>
-        <div className={'flex flex-col justify-end items-start  '}>
-          <p className={'text-lg'}>Alexis Cruz</p>
-          <p className={'text-lg '}>Dpto. Comercial</p>
-          <button className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
-            Contactar
-          </button>
-        </div>
-      </div>
-
       </div>
     </div>
-
-
   </div>
-)
+    <p className={'vertical-text'}>15 años junto a tí</p>
+  </div>)
+}
 
 export default SecondSection
