@@ -35,11 +35,9 @@ const ThirdSection = () => {
 
   useEffect(() => {
     async function getXML() {
-      console.log("Test");
       let localproductos = [];
       const db = getFirestore(app);
       let randomArrayForQuery = randomArray(19, 99)
-      console.log(randomArrayForQuery);
       for (let i = 0; i < randomArrayForQuery.length; i++) {
         const docRef = doc(db, "productos", randomArrayForQuery[i].toString());
         const docSnap = await getDoc(docRef)
@@ -47,24 +45,19 @@ const ThirdSection = () => {
         console.log(docSnap.data())
       }
 
-      // const querySnapshot = await getDocs(collection(db, "productos"));
-      // querySnapshot.forEach((doc) => {
-      //   localproductos.push(doc.data());
-      //   // console.log(`${doc.id} => ${doc.data()}`);
-      // });
       localproductos = setProducts([...localproductos])
-      // setProducts([...localproductos])
 
     }
 
     getXML()
   }, [])
   const openDetail = (product) => {
-    console.log(product)
+
     setDetailProduct(product)
     setDetailIsOpen(true)
   }
   const closeDetail = () => {
+    console.log('test2')
     setDetailIsOpen(false)
     setDetailProduct({})
   }

@@ -3,6 +3,7 @@ import Textfield from "./textfield"
 import Modal from "react-modal"
 import CardProductImage from "./CardProductImage"
 import { StaticImage } from "gatsby-plugin-image"
+import { AiOutlineClose, FaWindowClose } from "react-icons/all"
 
 function DetailProduct({ product, onClose }) {
   let body = {
@@ -46,9 +47,8 @@ function DetailProduct({ product, onClose }) {
       rounded-lg text-black bg-white fixed inset-x-0
       my-auto border  rounded mx-auto inset-y-0 object-center
       object-center">
-      <div className={"w-full text-right"}>
-        <StaticImage onClick={() => onClose()} className={"w-9 h-9 text-right close-icon"} src="../images/close.png"
-                     alt="close" />
+      <div className={"w-full text-right flex justify-end"}>
+        <AiOutlineClose onClick={() => onClose()} />
       </div>
       <div className={"flex flex-col lg:flex-row h-full justify-center"}>
         <div className=" h-2/3 lg:w-1/2 lg:h-full flex  lg:text-center lg:justify-center flex-col items-center">
