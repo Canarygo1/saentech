@@ -80,14 +80,13 @@ const ThirdSection = () => {
       <div className="w-full  flex flex-col text-center text-white  text-7xl  bg-opacity-10 pt-14" id={"third"}>
         <span className="leading-snug md:leading-normal mx-3 md:mx-0">Miles de productos al alcance de tu mano</span>
         <div className="mt-10 text-2xl flex flex-col mb-8">
-          <span>Disponemos de mas de 500 metros cuadrados de almacén</span>
+          <span>Disponemos de más de 500 metros cuadrados de almacén</span>
           <span>Tenemos productos de última generación</span>
         </div>
 
         <div>
         </div>
         <div className="flex flex-wrap lg:ml-4 mt-4 items-center section-products justify-center gap-4 mx-2">
-
           <CardProductImage url={products.length === 0 ? "" : products[1].Url}
                             name={products.length === 0 ? "" : products[1].NombreCorto}
                             onClick={products.length === 0 ? () => {

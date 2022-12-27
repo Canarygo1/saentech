@@ -156,7 +156,7 @@ const SecondSection = () => {
             />
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
-            <p className={'text-lg'}>Juan Luis Sanchez</p>
+            <p className={'text-lg'}>Juan Luis Sánchez</p>
             <p className={'text-md '}>Gerencia / Dpto. Compras</p>
             <button onClick={()=>window.open('mailto:juanluis@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
@@ -248,25 +248,6 @@ const SecondSection = () => {
             />
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
-            <p className={'text-lg'}>Luis Rago Tovar</p>
-            <p className={'text-md  '}>Dpto. Empresas</p>
-            <button onClick={()=>window.open('mailto:empresas@saentech.es?subject=Contacto%20web')
-            } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
-              Contactar
-            </button>
-          </div>
-        </div>
-        <div className=" h-60 flex flex-col justify-between">
-          <div>
-            <StaticImage
-              src="./../../images/fotos_empleados_saentech/empleado6.png"
-              width={100}
-              quality={100}
-              formats={["auto", "webp", "avif"]}
-              alt="A logo"
-            />
-          </div>
-          <div className={'flex flex-col justify-end items-start  '}>
             <p className={'text-lg'}>Juan Tee Wu</p>
             <p className={'text-md  '}>Dpto. Técnico / SAT</p>
             <button onClick={()=>window.open('mailto:sat@saentech.es?subject=Contacto%20web')
@@ -343,7 +324,7 @@ const SecondSection = () => {
             />
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
-          <p className={'text-lg'}>Minro</p>
+          <p className={'text-lg'}>Nimrod Galán</p>
             <p className={'text-md  '}>Dpto. logistica</p>
             <button onClick={()=>window.open('mailto:comercial@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
@@ -351,8 +332,29 @@ const SecondSection = () => {
             </button>
           </div>
         </div>
+        <div className=" h-60 flex flex-col justify-between">
+          <div>
+            <StaticImage
+              src="./../../images/fotos_empleados_saentech/empleado6.png"
+              width={100}
+              quality={100}
+              formats={["auto", "webp", "avif"]}
+              alt="A logo"
+            />
+          </div>
+          <div className={'flex flex-col justify-end items-start  '}>
+            <p className={'text-lg'}>Luis Rago Tovar</p>
+            <p className={'text-md  '}>Dpto. Empresas</p>
+            <button onClick={()=>window.open('mailto:empresas@saentech.es?subject=Contacto%20web')
+            } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
+              Contactar
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
+
   </div>
     <p className={'vertical-text'}>15 años junto a tí</p>
   </div>)
