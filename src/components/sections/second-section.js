@@ -155,9 +155,9 @@ const SecondSection = () => {
               alt="A logo"
             />
           </div>
-          <div className={'flex flex-col justify-end items-start '}>
+          <div className={'flex flex-col justify-end items-start  '}>
             <p className={'text-lg'}>Juan Luis Sanchez</p>
-            <p className={'text-lg '}>Gerencia / Dpto. Compras</p>
+            <p className={'text-md '}>Gerencia / Dpto. Compras</p>
             <button onClick={()=>window.open('mailto:juanluis@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
               Contactar
@@ -176,7 +176,7 @@ const SecondSection = () => {
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
             <p className={'text-lg'}>Jose Manuel Encinoso</p>
-            <p className={'text-lg '}>Gerencia / Dpto. Admin</p>
+            <p className={'text-md '}>Gerencia / Dpto. Admin</p>
             <button onClick={()=>window.open('mailto:jose@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
               Contactar
@@ -195,7 +195,7 @@ const SecondSection = () => {
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
             <p className={'text-lg'}>Martín Ruiz</p>
-            <p className={'text-lg '}>Dpto. Comercial</p>
+            <p className={'text-md  '}>Dpto. Comercial</p>
             <button onClick={()=>window.open('mailto:martin@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>              Contactar
             </button>
@@ -213,7 +213,7 @@ const SecondSection = () => {
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
             <p className={'text-lg'}>Jesus Manuel Sieira</p>
-            <p className={'text-lg '}>Dpto. Técnico</p>
+            <p className={'text-md  '}>Dpto. Técnico</p>
             <button onClick={()=>window.open('mailto:jesus@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>              Contactar
             </button>
@@ -231,7 +231,7 @@ const SecondSection = () => {
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
             <p className={'text-lg'}>Jorge Ravelo</p>
-            <p className={'text-lg '}>Dpto. Comercial</p>
+            <p className={'text-md  '}>Dpto. Comercial</p>
             <button onClick={()=>window.open('mailto:distribucion@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>              Contactar
             </button>
@@ -249,7 +249,7 @@ const SecondSection = () => {
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
             <p className={'text-lg'}>Luis Rago Tovar</p>
-            <p className={'text-lg '}>Dpto. Empresas</p>
+            <p className={'text-md  '}>Dpto. Empresas</p>
             <button onClick={()=>window.open('mailto:empresas@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
               Contactar
@@ -268,7 +268,7 @@ const SecondSection = () => {
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
             <p className={'text-lg'}>Juan Tee Wu</p>
-            <p className={'text-lg '}>Dpto. Técnico / SAT</p>
+            <p className={'text-md  '}>Dpto. Técnico / SAT</p>
             <button onClick={()=>window.open('mailto:sat@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
               Contactar
@@ -287,7 +287,7 @@ const SecondSection = () => {
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
             <p className={'text-lg'}>Daniel Ruiz</p>
-            <p className={'text-lg '}>Dpto. logistica</p>
+            <p className={'text-md  '}>Dpto. logistica</p>
             <button onClick={()=>window.open('mailto:logistica@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
               Contactar
@@ -306,7 +306,7 @@ const SecondSection = () => {
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
             <p className={'text-lg'}>Alexis Cruz</p>
-            <p className={'text-lg '}>Dpto. Comercial</p>
+            <p className={'text-md  '}>Dpto. Comercial</p>
             <button onClick={()=>window.open('mailto:alexis@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
               Contactar
@@ -325,7 +325,26 @@ const SecondSection = () => {
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
           <p className={'text-lg'}>Carlos Rodriguez</p>
-            <p className={'text-lg '}>Dpto. Comercial</p>
+            <p className={'text-md  '}>Dpto. Comercial</p>
+            <button onClick={()=>window.open('mailto:comercial@saentech.es?subject=Contacto%20web')
+            } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
+              Contactar
+            </button>
+          </div>
+        </div>
+        <div className=" h-60 flex flex-col justify-between">
+          <div>
+            <StaticImage
+              src="./../../images/fotos_empleados_saentech/empleado11.png"
+              width={100}
+              quality={100}
+              formats={["auto", "webp", "avif"]}
+              alt="A logo"
+            />
+          </div>
+          <div className={'flex flex-col justify-end items-start  '}>
+          <p className={'text-lg'}>Minro</p>
+            <p className={'text-md  '}>Dpto. logistica</p>
             <button onClick={()=>window.open('mailto:comercial@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
               Contactar

@@ -105,7 +105,7 @@ const FirstSection = () => {
         mejores productos
       </span>
         <span className="text-white text-xl my-5">
-        Mayorista canario de productos tecnológicos para<br/> grandes y pequeño negocios.
+        Mayorista canario de productos tecnológicos para<br/> negocios grandes y pequeños.
       </span>
         <div className="flex text-lg items-start mt-4">
             <Link className={'bg-primary rounded-lg text-black py-2 px-28 text-white'} to={"contacto"}>Contáctanos</Link>
