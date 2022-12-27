@@ -351,10 +351,8 @@ const SecondSection = () => {
             </button>
           </div>
         </div>
-
       </div>
     </div>
-
   </div>
     <p className={'vertical-text'}>15 años junto a tí</p>
   </div>)
