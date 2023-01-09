@@ -54,7 +54,7 @@ const Contacto = () => {
           <p className={"text-white text-sm lg:min-w-100"}>Nos pondremos en contacto contigo a la mayor brevedad</p>
           <form className="flex flex-col " onSubmit={handleSubmit}>
             <Textfield label={"nombre"} placeholder={"Nombre"} name={"nombre"} onChange={handleChange} />
-            <Textfield label={"mail_usuario"} placeholder={"Correo"} required={true} name={"mail_usuario"}
+            <Textfield type="email" label={"Correo"} placeholder={"Correo"} required={true} name={"mail_usuario"}
                        onChange={(event) => handleChange(event)} />
             <label className="block text-white text-sm font-bold mb-2 my-3" htmlFor="comercial">
               Tipo de consulta
@@ -81,7 +81,7 @@ const Contacto = () => {
                 </label>
               </div>
             </div>
-            <Textfield id={"subject"} htmlFor={"subject"} label={"subject"} required={true} placeholder={"subject"} name={"subject"}
+            <Textfield id={"subject"} htmlFor={"subject"} label={"Asunto"} required={true} placeholder={"Asunto"} name={"subject"}
                        onChange={handleChange} />
             <label className="block text-white text-sm font-bold mb-2" htmlFor={"subject"}>
               Mensaje
@@ -89,8 +89,8 @@ const Contacto = () => {
             <textarea rows={4} className="resize-y rounded-md w-full" name={"mensaje"}
                       onChange={handleChange}></textarea>
             <div className={'flex mt-3 gap-1'}>
-              <input type="checkbox" id="cbox2" value="second_checkbox"/>
-              <label className={'text-white text-md'}>He leído y acepto la política de protección de datos</label>
+              <input required={true} type="checkbox" id="cbox2" value="second_checkbox"/>
+              <label className={'text-white text-md'}>He leído y acepto la política de privacidad</label>
             </div>
 
             <button

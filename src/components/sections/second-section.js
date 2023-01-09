@@ -29,7 +29,7 @@ const SecondSection = () => {
   <div id='second-section' className="max-w-full text-center text-white text-7xl mt-10 second-bg">
     <span className="leading-snug md:leading-normal ">Más de 15 años de experiencia</span>
     <Separator dataHeigth="50px" dataWidth="1px" />
-    <div className={'mx-16 md:mx-4 max-h-20 mb-96'} data-aos="fade-up" >
+    <div className={'mx-16 md:mx-4 '} data-aos="fade-up" >
       <StaticImage className={'mb-8'} src={'./../../images/lineatemporal.png'}
                    width={600}
                    quality={100}
@@ -43,12 +43,19 @@ const SecondSection = () => {
         portfolio de productos que aquí les presentamos, así como demostrarles nuestro gran servicio de pre-venta,
         post-venta y servicio técnico profesional que disponemos.
       </p>
-      <StaticImage className={'mb-56'} src={'./../../images/logo-st.png'}
+      <StaticImage className={'mb-12'} src={'./../../images/logo-st.png'}
                    width={80}
                    quality={100}
       />
+      <div>
+        <p className={'text-lg'}>Envíos a todas las islas</p>
+        <StaticImage className={'mb-32'} src={'./../../images/islas.svg'}
+                     width={600}
+                     quality={100}
+        />
+      </div>
     </div>
-    <span className="md:leading-normal  ">Nuestros beneficios</span>
+    <span className="md:leading-normal">Nuestros beneficios</span>
     <Separator dataHeigth="50px" dataWidth="1px" />
     <div className={' mx-16 md:mx-40'} >
       <div className='mt-20 grid md:grid-col-12 lg:grid-cols-3 gap-12 ' >
