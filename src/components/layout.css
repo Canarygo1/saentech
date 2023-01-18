@@ -665,3 +665,22 @@ pre tt:after {
   min-height: 400px;
   min-width: 100%;
 }
+
+.bgPro{
+  align-self: start;
+  background-image: url("./../images/fotos_pro/title_bg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  min-width: 100%;
+}
+.bgBasicPro{
+  align-self: start;
+  background-image: url("./../images/fotos_pro/bg-basic.png");
+  background-repeat: no-repeat;
+
+  background-size: contain;
+  min-height: 360px;
+  min-width: 100%;
+}

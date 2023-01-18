@@ -1,9 +1,6 @@
 import * as React from "react"
 import Separator from "../separator"
 import { StaticImage } from "gatsby-plugin-image"
-import otterGIF from './../../images/fotos_empleados_saentech/test.gif'
-import otterPNG from './../../images/fotos_empleados_saentech/juan2.gif'
-import otter2PNG from './../../images/fotos_empleados_saentech/Juan.gif'
 import { useEffect, useState } from "react"
 import AOS from 'aos';
 import 'aos/dist/aos.css';

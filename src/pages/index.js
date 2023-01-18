@@ -7,7 +7,6 @@ import SecondSection from "../components/sections/second-section"
 import Separator from "../components/separator"
 import ThirdSection from "../components/sections/third-section"
 import FifthSection from "../components/sections/fifth-section"
-import { useEffect } from "react"
 import { Script } from "gatsby"
 
 const IndexPage = () => {
