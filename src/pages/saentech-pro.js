@@ -186,21 +186,19 @@ const SaentechProPage = () => {
         <div className={"bgPro  m-0 p-0"}></div>
       </div>
       <div  id='download' className={' flex mt-20 flex-col text-white justify-center items-center w-screen pb-20'}>
-        <h1>Area de descarga de software</h1>
+        <h1>Área de descarga de software</h1>
         <div className={'flex flex-row gap-6'}>
           <a href={'https://anydesk.com/es/downloads/thank-you?dv=win_exe'} className={'w-80 h-20  bg-white flex justify-center items-center rounded-lg'}>
               <StaticImage
                 className={'w-1/2'}
                 objectFit={'cover'}
                 src={'./../images/fotos_pro/anydesk.png'} alt={'anydesk'}/>
-
             </a>
           <a href={'https://download.teamviewer.com/download/TeamViewer_Setup_x64.exe'} className={'w-80 h-20  bg-white flex justify-center items-center rounded-lg'}>
               <StaticImage
                 className={'w-1/2'}
                 objectFit={'cover'}
                 src={'./../images/fotos_pro/teamviewer.png'} alt={'anydesk'}/>
-
             </a>
           <a href={'https://www.nanosystems.it/public/download/Supremo.exe'} className={'w-80 h-20  bg-white flex justify-center items-center rounded-lg'}>
               <StaticImage
@@ -208,13 +206,10 @@ const SaentechProPage = () => {
                 objectFit={'cover'}
                 src={'./../images/fotos_pro/supremo.png'} alt={'anydesk'}/>
             </a>
-
         </div>
         <div className={"bgBasicPro  m-0 p-0"}></div>
-
       </div>
     </div>
-
   </Layout>
 }
 
