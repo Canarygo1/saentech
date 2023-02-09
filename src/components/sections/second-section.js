@@ -7,6 +7,13 @@ import 'aos/dist/aos.css';
 
 const SecondSection = () => {
   const [animate, setAnimate] = useState(false);
+  const [hoverLaPalma,setHoverLaPalma] = useState(false);
+  const [hoverElHierro,setHoverElHierro] = useState(false);
+  const [hoverLaGomera,setHoverLaGomera] = useState(false);
+  const [hoverTenerife,setHoverTenerife] = useState(false);
+  const [hoverGranCanaria,setHoverGranCanaria] = useState(false);
+  const [hoverFuerteventura,setHoverFuerteventura] = useState(false);
+  const [hoverLanzarote,setHoverLanzarote] = useState(false);
 
   useEffect(()=>{
     AOS.init({duration:2000})
@@ -46,10 +53,143 @@ const SecondSection = () => {
       />
       <div>
         <p className={'text-lg'}>Envíos a todas las islas</p>
-        <StaticImage className={'mb-32'} src={'./../../images/islas.svg'}
-                     width={600}
-                     quality={100}
-        />
+        <div className={'flex flex-row gap-2 justify-center w-full content-center'}>
+          <div onMouseEnter={()=>setHoverElHierro(true)} onMouseLeave={()=>setHoverElHierro(false)} >
+
+          <StaticImage className={'h-full'} src={'./../../images/islands/ElHierro.png'}
+                       width={30}
+                        objectFit={"contain"}
+                       quality={100}
+          />
+          </div>
+          <div onMouseEnter={()=>setHoverLaPalma(true)} onMouseLeave={()=>setHoverLaPalma(false)} >
+          <StaticImage className={'h-full'} src={'./../../images/islands/LaPalma.png'}
+                       width={30}
+                       objectFit={"contain"}
+                       quality={100}
+          />
+          </div>
+          <div onMouseEnter={()=>setHoverLaGomera(true)} onMouseLeave={()=>setHoverLaGomera(false)} >
+
+          <StaticImage className={'h-full'} src={'./../../images/islands/LaGomera.png'}
+                       width={30}
+                       objectFit={"contain"}
+                       quality={100}
+          />
+          </div>
+          <div onMouseEnter={()=>setHoverTenerife(true)} onMouseLeave={()=>setHoverTenerife(false)} >
+
+          <StaticImage className={''} src={'./../../images/islands/Tenerife.png'}
+                       width={80}
+                       objectFit={"contain"}
+                       quality={100}
+          />
+          </div>
+          <div onMouseEnter={()=>setHoverGranCanaria(true)} onMouseLeave={()=>setHoverGranCanaria(false)} >
+          <StaticImage className={''} src={'./../../images/islands/GranCanaria.png'}
+                       width={60}
+                       objectFit={"contain"}
+
+                       quality={100}
+          />
+          </div>
+          <div onMouseEnter={()=>setHoverFuerteventura(true)} onMouseLeave={()=>setHoverFuerteventura(false)} >
+
+          <StaticImage className={''} src={'./../../images/islands/Fuerteventura.png'}
+                       width={60}
+                       objectFit={"contain"}
+
+                       quality={100}
+          />
+          </div>
+          <div onMouseEnter={()=>setHoverLanzarote(true)} onMouseLeave={()=>setHoverLanzarote(false)} >
+
+          <StaticImage className={''} src={'./../../images/islands/Lanzarote.png'}
+                       width={60}
+                       objectFit={"contain"}
+
+                       quality={100}
+          />
+          </div>
+        </div>
+        {hoverLaPalma||hoverElHierro||hoverLaGomera||hoverTenerife||hoverGranCanaria||hoverFuerteventura||hoverLanzarote?<div className={'mt-2'}>
+          {hoverLaPalma ? <div data-aos="fade-in fade-out">
+            <StaticImage
+              alt={"Second Image"}
+                         className={' rounded-xl'}
+                         src={"./../../images/islands/panel/LaPalmaPanel.png"}
+                         width={400}
+              objectFit={"contain"}
+              quality={100}
+            />
+          </div> : null}
+          {hoverElHierro ? <div  data-aos="fade-in">
+            <StaticImage
+              className={' rounded-xl'}
+              alt={"Second Image"}
+              src={"./../../images/islands/panel/ElHierroPanel.jpg"}
+              width={400}
+              objectFit={"contain"}
+              quality={100}
+            />
+
+          </div> : null}
+          {hoverLaGomera ? <div  data-aos="fade-in">
+            <StaticImage
+              className={' rounded-xl'}
+              alt={"Second Image"}
+              src={"./../../images/islands/panel/LaGomeraPanel.jpg"}
+              width={400}
+              objectFit={"contain"}
+              quality={100}
+            />
+
+          </div> : null}
+          {hoverTenerife ? <div  data-aos="fade-in">
+            <StaticImage
+              className={' rounded-xl'}
+              alt={"Second Image"}
+              src={"./../../images/islands/panel/TenerifePanel.jpg"}
+              width={400}
+              objectFit={"contain"}
+              quality={100}
+            />
+
+          </div> : null}
+          {hoverGranCanaria ? <div  data-aos="fade-in">
+            <StaticImage
+              className={' rounded-xl'}
+              alt={"Second Image"}
+              src={"./../../images/islands/panel/GranCanariaPanel.jpg"}
+              width={400}
+              objectFit={"contain"}
+              quality={100}
+            />
+
+          </div> : null}
+          {hoverFuerteventura ? <div  data-aos="fade-in">
+            <StaticImage
+              className={' rounded-xl'}
+              alt={"Second Image"}
+              src={"./../../images/islands/panel/FuerteventuraPanel.jpg"}
+              width={400}
+              objectFit={"contain"}
+              quality={100}
+            />
+
+          </div> : null}
+          {hoverLanzarote ? <div  data-aos="fade-in">
+            <StaticImage
+              className={' rounded-xl'}
+              alt={"Second Image"}
+              src={"./../../images/islands/panel/LanzarotePanel.jpg"}
+              width={400}
+              objectFit={"contain"}
+              quality={100}
+            />
+
+          </div> : null}
+        </div>:null}
       </div>
     </div>
     <span className="md:leading-normal">Nuestros beneficios</span>
