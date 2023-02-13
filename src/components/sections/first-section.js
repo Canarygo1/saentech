@@ -20,14 +20,11 @@ import AppleDistributor from "../distributors/AppleDistributor"
 import CecotecDistributor from "../distributors/cecotecDistributor"
 import CrossCallDistributor from "../distributors/crossCallDistributor"
 import CrucialDistributor from "../distributors/crucialDistributor"
-import EminentDistributor from "../distributors/eminentDistributor"
 import FellowDistributor from "../distributors/fellowesDistributor"
 import GigasetDistributor from "../distributors/gigasetDistributor"
 import HpDistributor from "../distributors/HpDistributor"
-import InjooDistributor from "../distributors/injooDistributor"
 import KingstonDistributor from "../distributors/kingstonDistributor"
 import LogitechDistributor from "../distributors/LogitechDistributors"
-import LLinkDistributor from "../distributors/L-linkDitributor"
 import MsiDistributor from "../distributors/msiDistributor"
 import PolyDistributor from "../distributors/polyDistributor"
 import SeagateDistributor from "../distributors/segeateDistributor"
@@ -36,6 +33,20 @@ import TpLinkDistributor from "../distributors/Tp-Link"
 import XiaomiDistributor from "../distributors/xiaomiDistributor"
 import CarrouselSlider from "../carrouselSlider"
 import { getAllCarrouselImages } from "../../api/api"
+import AmdDistributor from "../distributors/AmdDistributor"
+import IntelDistributor from "../distributors/intelDistributor"
+import WancomDistributor from "../distributors/wancomDistributor"
+import NaconDistributor from "../distributors/nacon"
+import WpDistributor from "../distributors/wpDistributor"
+import Pocketbook from "../distributors/pocketbookDistributor"
+import ShokzDistributor from "../distributors/shokz"
+import PolaroidDistributor from "../distributors/polaroidDistributor"
+import TclDistributor from "../distributors/tclDistributor"
+import SalicruDistributor from "../distributors/salicru"
+import ViewSonicDistributor from "../distributors/viewsonicDistributor"
+import TdSystemsDistributor from "../distributors/tdSystemsDistributor"
+import SeyposDistributor from "../distributors/seypos"
+import TailusDistributor from "../distributors/tailusDistributor"
 
 
 
@@ -172,6 +183,15 @@ const FirstSection = () => {
             <AcerDistributor/>
         </div>
       <div>
+        <AmdDistributor/>
+      </div>
+      <div>
+        <MsiDistributor/>
+      </div>
+      <div>
+        <IntelDistributor/>
+      </div>
+      <div>
         <AlcatelDistributor/>
       </div>
       <div>
@@ -181,20 +201,23 @@ const FirstSection = () => {
         <HpDistributor/>
       </div>
       <div>
-        <CrucialDistributor/>
+        <ShokzDistributor/>
+      </div>
+      <div>
+        <PolaroidDistributor/>
+      </div>
+      <div>
+        <TailusDistributor/>
       </div>
       <div>
             <CecotecDistributor/>
         </div>
       <div>
-        <InjooDistributor/>
+        <MsiDistributor/>
       </div>
 
       <div>
-        <EminentDistributor/>
-      </div>
-      <div>
-        <CrossCallDistributor/>
+        <NaconDistributor/>
       </div>
       <div>
         <FellowDistributor/>
@@ -203,22 +226,34 @@ const FirstSection = () => {
         <GigasetDistributor/>
       </div>
       <div>
+        <CrossCallDistributor/>
+      </div>
+      <div>
         <KingstonDistributor/>
       </div>
       <div>
         <LogitechDistributor/>
       </div>
       <div>
-        <LLinkDistributor/>
+        <WancomDistributor/>
       </div>
       <div>
-        <MsiDistributor/>
+        <ViewSonicDistributor/>
+      </div>
+      <div>
+        <TdSystemsDistributor/>
       </div>
       <div>
         <PolyDistributor/>
       </div>
       <div>
+        <TclDistributor/>
+      </div>
+      <div>
         <SeagateDistributor/>
+      </div>
+      <div>
+        <CrucialDistributor/>
       </div>
       <div>
         <Toshibaistributor/>
@@ -227,10 +262,21 @@ const FirstSection = () => {
         <TpLinkDistributor/>
       </div>
       <div>
+        <WpDistributor/>
+      </div>
+      <div>
+        <SalicruDistributor/>
+      </div>
+      <div>
+        <Pocketbook/>
+      </div>
+      <div>
         <XiaomiDistributor/>
       </div>
+      <div>
+        <SeyposDistributor/>
+      </div>
     </Slider>
-
   </div>
 }
 

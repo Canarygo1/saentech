@@ -1,18 +1,19 @@
 import React, { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "../../../.cache/gatsby-browser-entry"
+import { Link } from "gatsby"
 
-function CrossCallDistributor() {
+function IntelDistributor() {
   const [selectedId, setSelectedId] = useState(false)
-  const link = '../../images/fotos_marca/crosscall-logo.png'
-
+  const link = '../../images/fotos_marca/intel-logo.png'
   return (
+
     <motion.div className={"pt-2 flex flex-col items-center"}
                 onHoverStart={()=>setSelectedId(true)} onHoverEnd={()=>setSelectedId(false)} >
-      <Link to={"https://www.crosscall.com/es_ES/home/"} target="_blank">
-        <StaticImage className={"w-32 h-12 "} objectFit={"cover"} src={link}   alt={""}/>
+      <Link to={"https://store.acer.com/es-es/"} target="_blank">
+        <StaticImage className={"w-32 h-12 "} objectFit={"contain"} src={link}   alt={""}/>
       </Link>
+
       <div className={"w-auto h-auto"}>
         <AnimatePresence>
           {selectedId  && (
@@ -20,20 +21,23 @@ function CrossCallDistributor() {
               animate={{ scale:["0","100%"]}}
               transition={{ duration: 1 }}
               exit={{ opacity: 0 ,scale:["100%","20%"]}}
-              layoutId={selectedId} className={"text-lightgrey  h-auto  w-auto my-4 flex flex-col items-center"}>
+              layoutId={selectedId}  className={"text-lightgrey  h-auto  w-auto my-4 flex flex-col items-center"}>
               <motion.div className="grid grid-cols-2 gap-2 wrap">
-                <div className="w-auto flex flex-col items-center text-primary text-sm ">
-                  <div className="w-12 ">
-                    <StaticImage src="../../images/components/smartphone.png" alt="A kitten" />
+                <motion.div
+                  className="w-auto flex flex-col items-center justify-self-center text-primary text-sm ">
+                  <div className="w-12 " >
+                    <StaticImage src="../../images/components/microprocesador.png" alt="A kitten" />
                   </div>
-                  <p className=" h-full flex items-center">SmartPhones</p>
-                </div>
+                  <p className=" ml h-full flex items-center">Procesadores</p>
+                </motion.div>
               </motion.div>
             </motion.div>
           )}
         </AnimatePresence>
       </div>
-    </motion.div>  )
+
+    </motion.div>
+      )
 }
 
-export default CrossCallDistributor
+export default IntelDistributor
