@@ -11,8 +11,8 @@ function Pocketbook() {
 
     <motion.div className={"pt-2 flex flex-col items-center"}
                 onHoverStart={()=>setSelectedId(true)} onHoverEnd={()=>setSelectedId(false)} >
-      <Link to={"https://store.acer.com/es-es/"} target="_blank">
-        <StaticImage className={"w-32 h-12 "} objectFit={"con"} src={link}   alt={""}/>
+      <Link to={"https://pocketbook.es/es-es"} target="_blank">
+        <StaticImage className={"w-32 h-12 "} objectFit={"contain"} src={link}   alt={""}/>
       </Link>
 
       <div className={"w-auto h-auto"}>

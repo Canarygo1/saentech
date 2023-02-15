@@ -10,7 +10,7 @@ function IntelDistributor() {
 
     <motion.div className={"pt-2 flex flex-col items-center"}
                 onHoverStart={()=>setSelectedId(true)} onHoverEnd={()=>setSelectedId(false)} >
-      <Link to={"https://store.acer.com/es-es/"} target="_blank">
+      <Link to={"https://www.intel.es/content/www/es/es/homepage.html"} target="_blank">
         <StaticImage className={"w-32 h-12 "} objectFit={"contain"} src={link}   alt={""}/>
       </Link>
 

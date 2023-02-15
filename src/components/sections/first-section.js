@@ -213,10 +213,6 @@ const FirstSection = () => {
             <CecotecDistributor/>
         </div>
       <div>
-        <MsiDistributor/>
-      </div>
-
-      <div>
         <NaconDistributor/>
       </div>
       <div>
