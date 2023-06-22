@@ -47,6 +47,7 @@ import ViewSonicDistributor from "../distributors/viewsonicDistributor"
 import TdSystemsDistributor from "../distributors/tdSystemsDistributor"
 import SeyposDistributor from "../distributors/seypos"
 import TailusDistributor from "../distributors/tailusDistributor"
+import AdataDistributor from "../distributors/AdataDistributor"
 
 
 
@@ -179,9 +180,12 @@ const FirstSection = () => {
         <div>
             <SamsungDistributor/>
         </div>
-      <div>
+        <div>
             <AcerDistributor/>
         </div>
+      <div>
+            <AdataDistributor/>
+      </div>
       <div>
         <AmdDistributor/>
       </div>

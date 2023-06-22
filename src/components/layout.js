@@ -16,10 +16,12 @@ import Header from "./header/header"
 const Layout = ({ children }) => {
   return (
     <>
+      <div className={'min-h-screen'}>
       <Header />
-      <main className={"pt-16"}>
+      <main className={"pt-16 "}>
         {children}
       </main>
+      </div>
       <Footer />
     </>
   )

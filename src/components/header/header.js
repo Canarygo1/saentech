@@ -103,7 +103,7 @@ export default function Header() {
               />
             </Link>
           </div>
-          <div className="border-2 border-primary rounded-full text-black w-24 h-10 flex flex-row">
+          <div className="mr-2 border-2 border-primary rounded-full text-black w-24 h-10 flex flex-row">
             <a href="https://goo.gl/maps/ascJ6JSLR8sDrFef6"
                className="h-full w-1/2 bg-primary border-l-2 rounded-l-full border-primary flex items-center justify-center">
               <StaticImage
@@ -125,8 +125,12 @@ export default function Header() {
               />
             </a>
           </div>
+          <Link to={"/pedidos"} target="_blank"
+                className="bg-transparent flex items-center border-2 border-solid border-primary rounded-full h-10  px-4 mx-2 ">
+            Bajo pedido
+          </Link>
           <Link to={"http://pedidos.saentech.com/ogonlineapp/login/"} target="_blank"
-                className="bg-transparent border-2 border-solid border-primary rounded-full h-10 pt-1 px-4 mx-2">
+                className="bg-transparent flex items-center  border-2 border-solid border-primary rounded-full h-10  px-4 ">
             Acceso Clientes
           </Link>
         </div>
@@ -174,6 +178,7 @@ export default function Header() {
                 className="py-3 w-full mx-6">Contacto</span></Link>
               <Link to="http://pedidos.saentech.com/ogonlineapp/login/" className="my-3"><span
                 className="py-3 w-full mx-6 hover:bg-primary hover:text-white text-primary font-bold">Acceso clientes</span></Link>
+
             </div>
           </div>
         </div>
