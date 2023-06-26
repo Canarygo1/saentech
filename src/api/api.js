@@ -5,7 +5,7 @@ export const  getAllSection = async () => {
   return data;
 }
 export const getAllCarrouselImages = async () =>{
-  const { data } = await axios.get('https://strapi-saentech-xsn8m.ondigitalocean.app/api/carrousel-imagenes?populate=*')
+  const { data } = await axios.get('https://strapi-saentech-xsn8m.ondigitalocean.app/api/carrousel-imagenes?populate=*&sort=orden:asc')
   const imgUrls = [];
   for (let i = 0;i<data.data.length;i++){
     imgUrls.push(data.data[i].attributes.Foto.data[0].attributes.url)
