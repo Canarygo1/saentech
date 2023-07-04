@@ -125,10 +125,10 @@ export default function Header() {
               />
             </a>
           </div>
-          {/*<Link to={"/pedidos"} target="_blank"*/}
-          {/*      className="bg-transparent flex items-center border-2 border-solid border-primary rounded-full h-10  px-4 mx-2 ">*/}
-          {/*  Bajo pedido*/}
-          {/*</Link>*/}
+          <Link to={"/pedidos"} target="_blank"
+                className="bg-transparent flex items-center border-2 border-solid border-primary rounded-full h-10  px-4 mx-2 ">
+            Bajo pedido
+          </Link>
           <Link to={"http://pedidos.saentech.com/ogonlineapp/login/"} target="_blank"
                 className="bg-transparent flex items-center  border-2 border-solid border-primary rounded-full h-10  px-4 ">
             Acceso Clientes

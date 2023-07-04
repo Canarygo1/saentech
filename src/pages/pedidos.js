@@ -1,8 +1,7 @@
 import React, { useState } from "react"
 import Layout from "../components/layout"
-import Textfield from "../components/textfield"
 import { StaticImage } from "gatsby-plugin-image"
-import ExampleDoc from '../images/Ficha.pdf'
+import ExampleDoc from '../images/registro_bajo_pedido.pdf'
 
 function Pedidos({}) {
   const [noRegister,setNoRegister] = useState(false);
