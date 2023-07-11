@@ -178,6 +178,8 @@ export default function Header() {
                 className="py-3 w-full mx-6">Contacto</span></Link>
               <Link to="http://pedidos.saentech.com/ogonlineapp/login/" className="my-3"><span
                 className="py-3 w-full mx-6 hover:bg-primary hover:text-white text-primary font-bold">Acceso clientes</span></Link>
+              <Link to="/pedidos" className="my-3"><span
+                className="py-3 w-full mx-6 hover:bg-primary hover:text-white text-primary font-bold">Bajo pedido</span></Link>
 
             </div>
           </div>
