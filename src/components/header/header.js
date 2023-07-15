@@ -163,6 +163,7 @@ export default function Header() {
           <div className="hamburger-menu menu mr-3" onClick={menuFunction}>
             <div className="bar " />
           </div>
+
           <div className={"bg-white flex flex-col hide-menu menu-content z-10 js-menu-content"}>
             <a href="#" className="close close-js" onClick={closeMenu} />
             <div className="w-full text-black flex flex flex-col text-center items-center text-2xl mt-20">
