@@ -129,7 +129,7 @@ export default function Header() {
                 className="bg-transparent flex items-center border-2 border-solid border-primary rounded-full h-10  px-4 mx-2 ">
             Bajo pedido
           </Link>
-          <Link to={"http://pedidos.saentech.com/ogonlineapp/login/"} target="_blank"
+          <Link to={"http://pedidos.saentech.com/"} target="_blank"
                 className="bg-transparent flex items-center  border-2 border-solid border-primary rounded-full h-10  px-4 ">
             Acceso Clientes
           </Link>
