@@ -23,7 +23,7 @@ function Pedidos({}) {
           />
           <p className={"text-white"}>Ya estas registrado en nuestro sistema de bajo pedido?</p>
           <div className={"flex flex-row gap-8 mt-8"}>
-            <a href={'https://saentech-3459.myshopify.com'} target='_blank'>
+            <a href={'https://bajopedido.saentech.com/'} target='_blank'>
             <button className={"border-primary bg-primary py-1 px-10 rounded-md text-white"}>Sí</button>
             </a>
             <button className={"border-primary bg-transparent border-2 py-1 px-10 rounded-md text-white"} onClick={register}>No</button>
