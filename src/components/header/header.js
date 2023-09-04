@@ -29,7 +29,7 @@ export default function Header() {
       <div className={"self-center hidden w-1/2 xl:flex items-center justify-evenly"}>
       <div className={"mt-2 rounded-lg border-primary border"}>
          <span className=" text-primary text-lg mx-2">
-          Horario de L-J: 08:00 - 16:00 V: 08:00 - 15:00
+          Horario de L-J: 08:30 - 18:00 V: 08:30 - 15:00
         </span>
         </div>
 
@@ -148,7 +148,7 @@ export default function Header() {
         className="xl:hidden block items-center justify-between fixed top-0 left-0 bg-black pb-2 header-scroll">
         <div className={"mt-2 mx-4 rounded-lg block xl:hidden text-center border-primary border"}>
          <span className=" text-primary text-lg mx-2">
-          Horario de L-J: 08:00 - 16:00 V: 08:00 - 15:00
+          Horario de L-J: 08:30 - 18:00 V: 08:30 - 15:00
         </span>
         </div>
         <div className="w-screen justify-between flex mt-2">
