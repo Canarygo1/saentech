@@ -163,7 +163,8 @@ const FirstSection = () => {
 
       </div>
     </div>
-    <div>
+    <div className={"flex flex-col items-center mt-8"}>
+      <h2 className={"text-primary "}>Kit Digital</h2>
       <StaticImage
         src="./../../images/kitdigital-2.png"
         objectFit={"fill"}
