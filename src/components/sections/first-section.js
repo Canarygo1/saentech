@@ -163,6 +163,15 @@ const FirstSection = () => {
 
       </div>
     </div>
+    <div>
+      <StaticImage
+        src="./../../images/kitdigital-2.png"
+        objectFit={"fill"}
+        quality={100}
+        formats={["auto", "webp", "avif"]}
+        alt="A logo"
+      />
+    </div>
 
     <Slider {...settings} className={"text-white invisible lg:visible md:w-2/3 mt-6 flex flex-row justify-between"}>
         <div>
