@@ -163,16 +163,7 @@ const FirstSection = () => {
 
       </div>
     </div>
-    <div className={"flex flex-col items-center mt-8"}>
-      <h2 className={"text-primary "}>Kit Digital</h2>
-      <StaticImage
-        src="./../../images/kitdigital-2.png"
-        objectFit={"fill"}
-        quality={100}
-        formats={["auto", "webp", "avif"]}
-        alt="A logo"
-      />
-    </div>
+
 
     <Slider {...settings} className={"text-white invisible lg:visible md:w-2/3 mt-6 flex flex-row justify-between"}>
         <div>
