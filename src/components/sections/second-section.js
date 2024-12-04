@@ -339,7 +339,7 @@ const SecondSection = () => {
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
             <p className={'text-lg'}>Martín Ruiz</p>
-            <p className={'text-md  '}>Dpto. Comercial</p>
+            <p className={'text-md  '}>Director Dpto Comercial</p>
             <button onClick={()=>window.open('mailto:martin@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>              Contactar
             </button>
@@ -357,7 +357,7 @@ const SecondSection = () => {
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
             <p className={'text-lg'}>Jesus Manuel Sieira</p>
-            <p className={'text-md  '}>Dpto. Técnico</p>
+            <p className={'text-md  '}>Director Dpto. Técnico</p>
             <button onClick={()=>window.open('mailto:jesus@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>              Contactar
             </button>
@@ -412,7 +412,7 @@ const SecondSection = () => {
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
             <p className={'text-lg'}>Daniel Ruiz</p>
-            <p className={'text-md  '}>Dpto. logistica</p>
+            <p className={'text-md  '}>Dpto Técnico/Sat</p>
             <button onClick={()=>window.open('mailto:logistica@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
               Contactar
@@ -488,7 +488,7 @@ const SecondSection = () => {
           </div>
           <div className={'flex flex-col justify-end items-start  '}>
             <p className={'text-lg'}>Luis Rago Tovar</p>
-            <p className={'text-md  '}>Dpto. Empresas</p>
+            <p className={'text-md  '}>Dpto. Técnico/ Sat</p>
             <button onClick={()=>window.open('mailto:empresas@saentech.es?subject=Contacto%20web')
             } className={'bg-transparent border-2 h-8 border-solid border-primary text-lg w-full'}>
               Contactar
